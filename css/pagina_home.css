@@ -1,0 +1,23 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    justify-content: flex-end;
+    align-items: end;
+    
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+}
+p{
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+     
+    
+}
