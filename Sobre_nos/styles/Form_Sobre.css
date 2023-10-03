@@ -14,16 +14,11 @@
     left: 50%; /* Move o texto para o centro horizontal do contêiner */
     transform: translate(-50%, -50%); /* Centraliza o texto de forma precisa */
 }
-<<<<<<< HEAD
 /* .lavando_carro, */
-=======
-.lavando_carro,
->>>>>>> df2bd56f648eff9d3f77fbc1c06bd5703d755031
 .texto_sobre_img_lavando_carro {
     position: relative;
     left: 20%;
 }
-<<<<<<< HEAD
 /* ************************************************************************************************ */
 .Sobre_nos_img {
     display: flex;
@@ -39,15 +34,3 @@
 .texto_sobre_nos {
     max-width: 50%; /* Ajuste a largura do texto ao seu gosto */
 }
-=======
-
-.texto_sobre_nos{
-    position: relative;
-    left: 42%;
-    margin-top: -14%;
-}
-
-body{
-    display: inline-flexbox;
-}
->>>>>>> df2bd56f648eff9d3f77fbc1c06bd5703d755031
