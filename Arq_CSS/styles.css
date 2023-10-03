@@ -28,14 +28,20 @@ h1 {
         list-style: none;
         padding: 0;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> df2bd56f648eff9d3f77fbc1c06bd5703d755031
     .menu li {
         display: inline; /* Exibe os itens do menu em linha */
         margin-right: 20px; /* Espaço entre os itens do menu */
         position: relative; /* Define a posição relativa para posicionar o submenu */                
     }
+<<<<<<< HEAD
 
     
+=======
+>>>>>>> df2bd56f648eff9d3f77fbc1c06bd5703d755031
 /* Estilo para os submenus */
 .submenu {
     position: absolute;
