@@ -47,7 +47,6 @@ input[type="submit"]:hover {
     display: table;
     clear: both;
 }
-
 /* Estilize os campos de entrada e textarea */
 input[type="text"],
 input[type="email"],

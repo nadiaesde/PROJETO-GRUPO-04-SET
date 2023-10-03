@@ -41,7 +41,6 @@ input[type="submit"] {
 /* Estilize o botão de envio quando o mouse estiver sobre ele */
 input[type="submit"]:hover {
     background-color: #0056b3; /* Cor de fundo alterada no hover */
-    
 }
 
 /* Aumente o tamanho dos campos de input */

@@ -18,6 +18,7 @@ formulario.addEventListener("submit", function (event) {
                 mensagemEnviado.style.display = "block"; // Exibe a mensagem de confirmação
             }, 1000); // Aguarda 1 segundo (você pode ajustar o tempo conforme necessário)
 
-  // Limpa os campos do formulário
+
+ // Limpa os campos do formulário
   formulario.reset();
 });
