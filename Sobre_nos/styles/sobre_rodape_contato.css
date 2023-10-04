@@ -2,16 +2,27 @@
     background-color: #f0f0f0;
     padding: 10px;    /* padding: 10px; */
     width: 98%;    /* width: 98%; */
-    position:absolute;    /* position: absolute; */
+    position:relative;    /* position: absolute; */
     overflow: hidden;
-    margin: 0;
+    /* margin: 0; */
     bottom: 0;
     /* justify-content: center; */
+/* incluido agora */
+    margin: 0; auto;
+    top: 0px;
 }
+/* *************************************************************** */
+.h2,
+.contato {
+    text-align: center;
+}
+
+/* ******************************************************************** */
+
 
 /* Estilize as linhas do formulário */
 .linha {
-    margin-bottom: 20px; /* Espaçamento inferior entre linhas */
+    margin-bottom: 50px; /* Espaçamento inferior entre linhas  no outro esta 50px*/
     /* justify-content: space-between; */
 }
 
@@ -22,8 +33,10 @@
     margin-right: 10%; /* Espaço entre as colunas */
     display: flexbox; /*   display: inline-block; */
     /* justify-content:space-between; */
-}
 
+    /* ********************************************** */
+    float: left;
+}
 /* Limpe o float após as colunas */
 .coluna:last-child {
     margin-right: 0; /* Remova o espaçamento direito da última coluna */
@@ -50,6 +63,10 @@ input[type="tel"],
 textarea {
     font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
     width: 100%; /* Ocupa 100% da largura do contêiner */
+/* inseridos agora */
+    padding: 10px;
+    border-radius: 5px;
+
 }
 
 .linha::after {
@@ -68,7 +85,14 @@ textarea {
 
 .contato-texto {
     flex: 1; /*Ocupa o espaço restante à esquerda */
-     padding: 10px; 
+    padding: 10px;
+    
     max-width: 50%; /*Limite a largura para evitar sobreposição com o formulário */
-    /* justify-content:flex; */
+    text-align: right;
+}
+/* ********************* inserido agora */
+#nome {
+    /* Estilos CSS para o campo com id "nome" */
+    width: 200%;
+    /* Outros estilos aqui */
 }
