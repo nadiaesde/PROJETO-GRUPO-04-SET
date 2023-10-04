@@ -8,6 +8,10 @@
     <title>Trabalhe Conosco</title>
     </head>
     <body>
+        <li>
+            <a href="javascript:void(0);" id="mostrarFormularioColaborador">Trabalhe Conosco</a>
+        </li>                           
+
         <div id="formulario-colaborador" style="display: none;">
             <h2>Trabalhe Conosco</h2>
             <form action='mailto:' + email + method="post" enctype="text/plain"> <!-- <form action="processar_formulario.php" method="post"> -->
@@ -24,7 +28,7 @@
                     </div>
                     <div class="coluna">
                         <label for="telefone">Telefone:</label>
-                        <input type="telefone" id="telefone" name="telefone" required>
+                        <input type="tel" id="telefone" name="telefone" required>
                     </div>
                 </div>
                 <label for="arquivo">Selecionar Arquivo:</label>
@@ -36,5 +40,6 @@
                 </div>
             </form>
         </div> <!-- Resto do conteúdo da página -->
+        <script type="text/javascript" src="./meu_javascript.js"></script>        
 </body>
 </html>
