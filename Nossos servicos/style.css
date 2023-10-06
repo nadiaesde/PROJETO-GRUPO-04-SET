@@ -9,16 +9,64 @@
     }
 .imagem_banner{
     width: 100%;
-    height: 900px;
+    height: 500px;
     object-fit: cover;
 }
+ 
 .servicos_conteiner{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+}
+.titulo_servico{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 1.5em;
 }
 
+.paragrafo {
+flex-wrap: wrap ;
+border: 1px;color: #800808;
+width: 350px;
+height: 250px;
+}
+
+.body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #504d4d;
+}
+.paragrafo{
+contain: layout;
+contain: size;
+contain: paint;
+contain: content;
+contain: strict;
+}
+
+input,button,select,textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit
+}
+
+a {
+    color: #428bca;
+    text-decoration: none
+}
+
+a:hover,a:focus {
+    color: #2a6496;
+    text-decoration: underline
+}
+
+a:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px
 
