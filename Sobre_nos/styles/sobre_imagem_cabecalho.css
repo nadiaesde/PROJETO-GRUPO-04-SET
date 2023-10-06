@@ -1,12 +1,9 @@
- .book-gallery { */
+ .book-gallery { 
     overflow: hidden; /* Limpa o fluxo e previne comportamentos inesperados */
 }
 
 .logo {
     width: 333%;
-    /* float: left; Faz com que as capas fiquem lado a lado */
-    /* width: calc(33.33% - 20px); Cada capa ocupa um terço da largura disponível */
-    /* margin: 10px; Espaço entre as capas 10px */
     text-align: top; /* Centraliza o conteúdo horizontalmente */
 }
 
@@ -27,14 +24,6 @@ body {
     top: 0;
     left: 0;
     position: absolute; /* Define .logo1 com position: absolute */
-}
-
- .book-item { 
-    /* float: left; */
-    /* width: calc(33.33% - 20px); */
-    /* margin: 10px; */
-    /* text-align: center; */
-    /* position: relative; */
 }
 
 .logo img {
