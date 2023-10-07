@@ -37,6 +37,16 @@ h1 {
 
     }
 
+    .menu ul li a {
+        color: #333; /* Cor padrão do texto do link */
+        text-decoration: none; /* Remover sublinhado padrão */
+        transition: 500ms linear;        
+    }
+    
+    .menu ul li a:hover {
+        color: black; /* Cor quando o mouse passa sobre o link */
+    }
+
 .submenu {
     position: absolute;
     top: 100%; /* Posiciona abaixo do item do menu principal */

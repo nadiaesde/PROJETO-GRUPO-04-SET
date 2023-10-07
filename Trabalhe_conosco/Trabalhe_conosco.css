@@ -50,7 +50,7 @@ input[type="submit"]:hover {
 /* Estilize os campos de entrada e textarea */
 input[type="text"],
 input[type="email"],
-input[type="telefone"],
+input[type="tel"],
 textarea {
     width: 90%; /* Defina a largura desejada (100% para ocupar a largura da coluna) */
     padding: 10px; /* Espaçamento interno nos campos */

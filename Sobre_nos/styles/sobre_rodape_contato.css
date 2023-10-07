@@ -7,6 +7,7 @@
     bottom: 0;
     margin: 0; auto;
     top: 0px;
+    align-items: center;
 }
 
 .h2,
@@ -22,7 +23,7 @@ div .linha {
 .coluna {
     width: 48%; /* 48% de largura para ocupar metade do retângulo */
     margin-right: 10%; /* Espaço entre as colunas */
-    display: flexbox; /*   display: inline-block; */
+    display: flexbox; /*  display: inline-block; */
     float: left;
 }
 /* Limpe o float após as colunas */
@@ -62,7 +63,8 @@ textarea {
 .contato-container { 
     display:flex;
     flex-direction:row ; /* Alinhe na horizontal */
- }
+    justify-content: center;
+}
 
 .contato-texto {
     padding: 10px;
