@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nossos Serviços</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./nossos_servicos_rodape.css">
     
 </head>
 <body>
@@ -11,30 +12,88 @@
       <div class="servicos_conteiner">
         <h2 class="Titulo">Nossos Serviços</h3>
         <h3 class="sub-titulo">EcoClean Limpeza Total: Higienizamos Seu Veículo Onde Você Estiver!</h3>
-        <ul>
-            <li>
+        <ul class="lista">
+            <li class="item_lista" id="imagem1">
             <h4 class="titulo_servico">Higienização de Interna</h4>
             <p class="paragrafo">É um processo de limpeza e desinfecção do interior do veículo, com o objetivo de remover sujeira, manchas, odores e bactérias. A higienização interna proporciona um ambiente limpo e saidável para os ocupantes do veículo, elimminando os odores desagráveis e prevenindo a proliferação de bactérias e germes e é uma opão recomendada para quem deseja manter ahigiene e conforto do interior do veículo, em um ambiente notadamente saudável.</p>
         </li>
-        <li>
+        <li class="item_lista" id="imagem2">
             <h4 class="titulo_servico" >Higienização Externa</h4>
             <p class="paragrafo">Do pneus ao teto, tudo brilhando. Não risca, protege a pintura e permanece limpo mais tempo. Não utilizamos água, nossa higienização atende a todos os requisitos mundiais de preservação ambiental. Com O polimento final, mantendo o brilho por muito mais tempo.
             </p>
         </li>
-        <li>
+        <li  class="item_lista" id="imagem3">                  
             <h4 class="titulo_servico">Limpeza Técnica</h4>
             <p class="paragrafo">É um processo que utiliza técnicas e produtos específicos para minimizar o risco de danos na pintuta e nas partes sensíveis do carro. A lavagem técnica visa remover a sujeira e os contaminantes da superfície do véculo, sem danificar a pintuta ou causar arranhões. Além disso, a lavagem técnica também inclui a d=secagem adequada do veículo, cm ouso de panos de microfibra e sopradores de ar, para evitar marcas de água na pintura.
             </p>
         </li>
-        <li>
-            <h4 class="titulo_servico">Revitalizaão de Faróis</h4>
+        <li class="item_lista" id="imagem4">
+            <h4 class="titulo_servico">Revitalização de Faróis</h4>
             <p class="paragrafo">É um processo de restauração de lentes de faróis que ficaram desgastadas, opacas ou amareladas pelo tempo e exposição ao raios UV. Faróis desgastados podem prejudicar a ilminação e visibilidade noturna do veículo, tornando a conduão mais perigosa. O processo inclui ua limpeza profunda da lente do farol, para remover sujeira e resíduos de limpeza abrasivo, que éesfregado na superfície da lente com uma ferramenta de polimento rotativa.</p>
         </li>
-        <li>
-            <h4 class="titulo_servico">Revitalizaão de Faróis</h4>
-            <p class="paragrafo">É um processo de restauração de lentes de faróis que ficaram desgastadas, opacas ou amareladas pelo tempo e exposição ao raios UV. Faróis desgastados podem prejudicar a ilminação e visibilidade noturna do veículo, tornando a conduão mais perigosa. O processo inclui ua limpeza profunda da lente do farol, para remover sujeira e resíduos de limpeza abrasivo, que éesfregado na superfície da lente com uma ferramenta de polimento rotativa.</p>
+        <li class="item_lista" id="imagem5">
+            <h4 class="titulo_servico">Espelhamento</h4>
+            <p class="paragrafo">Para que a visão do motorista não seja prejudicada em dias de chuva, recomendamos a impermeabilização dos vidros, feita com produto apropriado.</p>
         </li>
+        <li class="item_lista" id="imagem6">
+            <h4 class="titulo_servico">Ipermeabilização de Vidros</h4>
+            <p class="paragrafo">Tecnologia importada para a revitalização da pintura. Recomendamos este serviço quando a pintura do carro estiver queimada do sol e opaca, quando há riscos no verniz ou manchas de tintas.</p>
+        </li>
+
         </ul>
-      </div>      
+      </div> 
+      <footer>
+        <div id="formulario-contato">
+            <h2 class="contato">CONTATO</h2>
+        <div class="contato-container">
+            <div class="contato-texto">
+            <!-- <form action="mailto:jctinelli@hotmail.com" method="post" enctype="text/plain"> -->
+
+                <p>
+                    <b>Horário:</b> <br>
+                    De segunda-feira á sábado das 10:00 ás 21:00h. Aos domingos abre 12h e encerra ás 20:00h.
+                </p>
+                <p>
+                    <b>Telefones:</b> <br>
+                    <b>Loja</b> - Shopping Rio Mar Fortaleza <br> (85) 99773-8791 | (85) 3111-4049 <br/>
+                    <b>Loja 03</b> - Aeroporto de Fortaleza <br/> (85) 99706-3359
+                </p>
+                <p>
+                    <b>E-mail:</b> <br>
+                contato@carwashecologico.com.br
+                </p>
+            </div>
+        <form action="mailto:jctinelli@hotmail.com" method="post" enctype="text/plain">
+            <div class="linha">
+                <div class="coluna">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="coluna">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="coluna">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="coluna">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+            </div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <input type="submit" value="Enviar">
+            <div id="mensagem-enviada" style="display: none;">
+                <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
+            </div>
+        </form>
+        </div>    
+        </div>
+    </div> <!-- Resto do conteúdo da página -->
+</footer>     
 </body>
 </html>
