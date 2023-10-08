@@ -1,18 +1,21 @@
 #formulario-contato {
     background-color: #f0f0f0;
     padding: 10px;    /* padding: 10px; */
-    width: 98%;    /* width: 98%; */
+    width: 98,5%;    /* width: 98%; */
     position:relative;    /* position: absolute; */
     overflow: hidden;
     bottom: 0;
     margin: 0; auto;
     top: 0px;
     align-items: center;
+    /* height: auto; */
 }
 
 .h2,
 .contato {
     text-align: center;
+    margin-top: 0;
+    font-size: 20px;
 }
 
 div .linha {
@@ -50,9 +53,11 @@ input[type="tel"],
 textarea {
     font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
     width: 100%; /* Ocupa 100% da largura do contêiner */
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 5px;
+    height: 5px;
 }
+
 
 .linha::after {
     content: "";
@@ -75,3 +80,12 @@ textarea {
 #nome {
     width: 200%;
 }
+
+#mensagem {
+    padding: 0.5% 4.5%;
+    height: 50px;
+}
+
+/* body {
+    height: auto;
+} */
