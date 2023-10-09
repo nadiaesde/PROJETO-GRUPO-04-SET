@@ -1,0 +1,37 @@
+/* #instagram, */
+/* #facebook, */
+#whatsapp-icon {
+    position: fixed;
+    bottom: 20px; /* Ajuste conforme necessário para a posição vertical */
+    right: 20px; /* Ajuste conforme necessário para a posição horizontal */
+  }
+
+#instagram {
+  position: fixed;
+  right: 20px;
+  top: 8%;
+
+}
+#facebook {
+  position: fixed;
+  /* bottom: 20px; */
+  right: 20px;
+}
+
+
+#instagram,
+#facebook,
+#whatsapp-icon a {
+  display: block;
+  background-color: transparent; /* Cor de fundo do ícone */
+  padding: 10px;
+  border-radius: 50%; /* Torna o ícone circular */
+}
+ 
+  
+#instagram,
+#facebook,
+#whatsapp-icon img {
+  width: 40px; /* Tamanho do ícone */
+  height: 40px;
+}
