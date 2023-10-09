@@ -1,0 +1,60 @@
+#facebook,
+#instagram,
+#whatsapp-icon {
+    position:fixed;
+    bottom: 20px; /* Ajuste conforme necessário para a posição vertical */
+    right: 20px; /* Ajuste conforme necessário para a posição horizontal */
+    /* align-items: end; */
+    z-index: 1;
+  }
+
+#facebook {
+  top: 10%;
+} 
+
+#instagram {
+  position: fixed;
+  right: 20px;
+  top: 15.5%;
+}
+
+#facebook,
+#instagram,
+#whatsapp-icon a {
+  display: block;
+  background-color: transparent; /* Cor de fundo do ícone */
+  padding: 10px;
+  border-radius: 50%; /* Torna o ícone circular */
+  z-index: 1;
+}
+
+#facebook,
+#instagram,
+#whatsapp-icon img {
+  width: 40px; /* Tamanho do ícone */
+  height: 40px;
+  /* align-items: center; */
+  z-index: 1;
+}
+
+/* Estilo base do ícone */
+#facebook,
+#instagram,
+#whatsapp-icon img  {
+  width: 40px; /* Tamanho original do ícone */
+  height: 40px;
+  transition: transform 0.3s; /* Adiciona uma transição suave para o efeito de zoom */
+}
+
+/* Efeito de zoom ao passar o mouse */
+#facebook:hover{
+  transform: scale(1.2); /* Aumenta o tamanho em 20% (1.2 vezes) */
+}
+
+#instagram:hover {
+  transform: scale(1.2); /* Aumenta o tamanho em 20% (1.2 vezes) */
+}
+
+#whatsapp-icon:hover {
+  transform: scale(1.2); /* Aumenta o tamanho em 20% (1.2 vezes) */
+}

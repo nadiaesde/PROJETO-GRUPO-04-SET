@@ -1,5 +1,6 @@
 .container {
     position: relative;
+    margin: 0;
 }        
 
 h1 {
@@ -26,16 +27,26 @@ h1 {
     margin-bottom: 10px; /*  10px  Espaço entre os itens do menu suspenso */    
 }
 
-    .menu ul {
-        list-style: none;
-        padding: 0;
-    }
-    .menu li {
-        display: inline; /* Exibe os itens do menu em linha */
-        margin-right: 20px; /* Espaço entre os itens do menu */
-        position: relative; /* Define a posição relativa para posicionar o submenu */ 
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+.menu li {
+    display: inline; /* Exibe os itens do menu em linha */
+    margin-right: 20px; /* Espaço entre os itens do menu */
+    position: relative; /* Define a posição relativa para posicionar o submenu */ 
 
-    }
+}
+
+.menu ul li a {
+    color: #333; /* Cor padrão do texto do link */
+    text-decoration: none; /* Remover sublinhado padrão */
+    transition: 500ms linear;        
+}
+
+.menu ul li a:hover {
+    color: black; /* Cor quando o mouse passa sobre o link */
+}
 
 .submenu {
     position: absolute;
@@ -46,7 +57,7 @@ h1 {
     padding: 10px;
 }
     /* Mostra o submenu quando o item do menu principal é hover */
-    .menu li:hover .submenu {
+.menu li:hover .submenu {
         display: block;
     }
     /* Seletor para remover o sublinhado de links no menu */
