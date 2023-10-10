@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,16 +11,21 @@
         font-size: 14px;
         line-height: 1.42857143;
         color: #333;
-        background-color: #f1f1f1;
+        background-color: #ebe1e1;
     }
     
 .cabecalho{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     font-size: xxx-large;
+    gap: 10%;
     font-style: normal;
-    z-index: 1;
+    position: absolute;
+    width: 100%;}
+.cabecalho h1{
+    color: white;
+    text-shadow: 1px 1px 20px black;
 }
 .imagem_banner{
     width: 100%;
@@ -28,7 +34,13 @@
     display: inline-block;
     z-index: 1;
 }
+.nav a{
+    color: white;
+    text-shadow: 1px 1px 20px black;
+    font-size: 20px;
+}
 .Titulo{
+    /*font-family: 'Roboto', sans-serif;*/
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 30px;
@@ -37,7 +49,8 @@
     text-align: center;
 }
 .sub-titulo{
-    text-transform: uppercase;
+    /*font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;*/
     font-weight: bold;
     margin-bottom: 30px;
     font-size: 3em;
@@ -53,6 +66,7 @@
         align-items: center;
 }
 .titulo_servico{
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 30px;
@@ -62,16 +76,19 @@
 }
 
 .paragrafo {
+    font-family: 'Lora', serif;
     flex-wrap: wrap;
     border: 1px;
     color: #f3eded;
     width: 100%;
+    font-size: 16px;
+    text-shadow: 1px 1px 20px black;
     /* height: auto; */
     contain: layout;
 
 }
 .lista{
-    width: 40%;
+    width: 62%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -89,12 +106,34 @@
     padding: 10px;   
 }
 #imagem1{background-image: url(./imagens-nadia/HIGIENIZACAO_INTERNA.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0801016e;
+    background-blend-mode: multiply;
 }
-#imagem2{background-image: url(./imagens-nadia/HIGIENIZACAO_EXTERNA.jpg);}
-#imagem3{background-image: url(./imagens-nadia/LIPEZA_TECNICA.jpg);}
-#imagem4{background-image: url(./imagens-nadia/REVITALIZACAO_FAROIS.jpg);}
-#imagem5{background-image: url(./imagens-nadia/POLIMENTO.jpg);}
-#imagem6{background-image: url(./imagens-nadia/IPERMEABILIZACAO_VIDRO.jpg);}
+#imagem2{ 
+    /*background-image: url(./imagens-nadia/HIGIENIZACAO_EXTERNA.jpg);*/
+    background-image: linear-gradient(#c9bbbb,#111111);
+}
+
+
+#imagem3{background-image: url(./imagens-nadia/LIPEZA_TECNICA.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0801016e;
+    background-blend-mode: multiply;}
+#imagem4{
+    /*background-image: url(./imagens-nadia/REVITALIZACAO_FAROIS.jpg);*/
+    background-image: linear-gradient(#c9bbbb,#111111);
+}
+#imagem5{background-image: url(./imagens-nadia/POLIMENTO.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0801016e;
+    background-blend-mode: multiply;}
+#imagem6{
+    /*background-image: url(./imagens-nadia/IPERMEABILIZACAO_VIDRO.jpg);*/
+    background-image: linear-gradient(#c9bbbb,#111111);}
 
 .contato-texto {
     padding: 10px;
