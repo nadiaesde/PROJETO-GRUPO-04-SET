@@ -3,20 +3,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nossos Serviços</title>
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./nossos_servicos_rodape.css">
-    
+    <link rel="stylesheet" type="text/css" href="../Trabalhe_conosco/Trabalhe_conosco.css">
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" defer src="./java_script/trabalhe_conosco.js"></script>  
 </head>
 <body>
     <header class="cabecalho">
         <h1>EcoClean</h1>
        <!--<img src="/Nossos servicos/imagens-nadia/LOGO SITE 2.jpg"Logo do Meu Site">-->
         <nav class="nav">
-                <a href="#">Home</a>
-                <a href="/Sobre_nos/Sobre.html">Sobre nós</a>
+                <a href="../index.html">Home</a>
+                <a href="../Sobre_nos/Sobre.html">Sobre nós</a>
                 <a href="#">Nossos Serviços</a>
-                <a href="contato_form">Contato</a>
-                <a href="/Trabalhe_conosco/Trabalhe_conosco.html">Trabalhe conosco</a>
+                <a href="#formulario-contato">Contato</a>
+                <a href="javascript:void(0);" id="mostrarFormularioColaborador">Trabalhe Conosco</a>
             
         </nav>
     </header>
@@ -106,6 +107,66 @@
         </div>    
         </div>
     </div> <!-- Resto do conteúdo da página -->
-</footer>     
+<!--    <div id="formulario-colaborador" style="display: none;">
+            <h2>Trabalhe Conosco</h2>
+            <form action='mailto:' + email + method="post" enctype="text/plain">  <form action="processar_formulario.php" method="post"> 
+                <div class="linha">
+                    <div class="coluna">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="coluna">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="coluna">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </div>
+                </div>
+                <label for="arquivo">Selecionar Arquivo:</label>
+                <input type="file" id="arquivo" name="arquivo" accept=".pdf, .doc, .docx" required><br><br>
+                <input type="submit" value="Enviar">
+
+                <div id="mensagem-enviado" style="display: none;">
+                    <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
+                </div>
+            </form>
+        </div> --> <!-- Resto do conteúdo da página -->
+</footer> 
+<div id="formulario-modal" style="display: none;">
+    <div id="formulario-colaborador" >
+    <h2>Trabalhe Conosco</h2>
+    <form action='mailto:' + email + method="post" enctype="text/plain"> <!-- <form action="processar_formulario.php" method="post"> -->
+        <div class="linha">
+            <div class="coluna">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+        </div>
+        <div class="linha">
+            <div class="coluna">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="coluna">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+        </div>
+        <label for="arquivo">Selecionar Arquivo:</label>
+        <input type="file" id="arquivo" name="arquivo" accept=".pdf, .doc, .docx" required><br><br>
+        <input type="submit" value="Enviar">
+        <button class="btn-cancelar"  > Cancelar </button>
+
+        <div id="mensagem-enviado" style="display: none;">
+            <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
+        </div>
+    </form>
+</div> <!-- Resto do conteúdo da página -->  
+</div>  
 </body>
+
 </html>
