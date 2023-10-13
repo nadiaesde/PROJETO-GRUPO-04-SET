@@ -140,3 +140,31 @@
     max-width: 50%; /*Limite a largura para evitar sobreposição com o formulário */
     text-align: right;
 }
+#formulario-modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: #3333338d;
+    position: fixed;
+    left: 0%;
+    top: 0px;
+}
+#formulario-colaborador {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.btn-cancelar{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(124, 5, 5);
+    color: #fff;
+    cursor: pointer;
+    transition: 300ms;
+
+}
+.btn-cancelar:hover{
+    background-color:rgb(221, 90, 90) ;
+}
