@@ -63,3 +63,17 @@ textarea {
     width: 90%;
     /* Outros estilos aqui */
 }
+
+.btn-cancelar{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(124, 5, 5);
+    color: #fff;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.btn-cancelar:hover{
+    background-color:rgb(221, 90, 90) ;
+}
