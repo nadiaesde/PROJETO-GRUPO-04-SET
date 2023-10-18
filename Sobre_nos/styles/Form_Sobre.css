@@ -34,3 +34,27 @@
 .texto_sobre_nos {
     max-width: 50%; /* Ajuste a largura do texto ao seu gosto */
 }
+/*@media(max-width: 1315px) {
+    .sub-titulo{
+        font-size: 2em;
+    }
+    .lista {
+        width: 90%;
+        overflow-y: scroll;
+        height: 600px;
+    }
+    .item_lista{
+        min-width: 500px;
+    }
+    .nav{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+}
+@media(max-width: 1849px){
+    .lista{
+        width: 85%;
+    }
+}
+*/
