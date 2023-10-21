@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastre-se</title>
+  <!-- <link rel="stylesheet" href="./CSS/Cadastrese.css"> Inclua o arquivo CSS para estilizar o formulário -->
+  <link rel="stylesheet" href="/Agendamento/CSS/Cadastrese.css"> <!-- Inclua o arquivo CSS para estilizar o formulário -->  
+</head>
+<body>
+
+  <main>
+    <section class="card">
+        <form id="cadastro_base">
+            <h2>Cadastro</h2>
+            <label for="nome_completo">Nome Completo:</label>
+            <input type="text" id="nome_completo" name="nome_completo" required>
+            <label for="endereco_completo">Endereço completo:</label>
+            <input type="text" id="endereco_completo" name="endereco_completo" required>
+            <label for="telefone">Telefone para contato:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            <label for="email">Informe email:</label>
+            <input type="email" id="email" name="email" required>
+        </form>
+    </section>
+
+    <section class="card">
+        <form id="cadastro_login">
+            <h1>login</h1>
+            <label for="nome_usuario">Nome de usuário:</label>
+            <input type="text" id="nome_usuario" name="nome_usuario" required>
+            <label for="CPF_CNPJ">Digite um CPF ou CNPJ:</label>
+            <input type="text" id="CPF_CNPJ_input" name="CPF_CNPJ_input" placeholder="123.456.789-09 ou 12.345.678/0001-61" required>
+            <p id="CPF_CNPJ_Result"></p>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+        </form>
+    </section>
+    <!-- ********************************************************************************************************************** -->
+    <section class="card">
+        <h1>Veículo</h1>
+        <form id="meuForm">
+            <label for="veiculo_marca">Marca:</label>
+            <select id="veiculo_marca" name="veiculo_marca">
+                <option value="Ford">Ford</option>
+                <option value="Fiat">Fiat</option>
+                <option value="General Motors">General Motors</option>
+                <option value="Volkswagen">Volkswagen</option>
+            </select>
+
+            <label for="veiculo_modelo">Modelo:</label>
+            <select id="veiculo_modelo" name="veiculo_modelo">
+                <!-- Este campo será preenchido dinamicamente com base na seleção da marca -->
+            </select>
+
+            <label for="veiculo_cor">Cor:</label>
+            <select id="veiculo_cor" name="veiculo_cor">
+                <option value="Branco">Branco</option>
+                <option value="Prata">Prata</option>
+                <option value="Preto">Preto</option>
+                <option value="Vermelho">Vermelho</option>
+                <option value="Azul">Azul</option>
+            </select>
+            <button type="submit" >Gravar</button>
+        </form>
+    </section>
+</main>
+<!-- ********************************************************************************************************************** -->
+  <!-- <script src="./javascript/Cadastrese.js" defer></script> Inclua o arquivo JavaScript para lidar com a submissão do formulário -->
+  <!-- <script src="./javascript/CPF_CNPJ.js" defer></script> -->
+
+  <script src="/Agendamento/javascript/Cadastrese.js" defer></script> <!-- Inclua o arquivo JavaScript para lidar com a submissão do formulário -->
+  <script src="/Agendamento/javascript/CPF_CNPJ.js" defer></script>
+</body>
+</html>
+

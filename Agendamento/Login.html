@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="./CSS/login.css">
+  <script src="./javascript/login.js" defer></script> -->
+
+  <link rel="stylesheet" href="/Agendamento/CSS/login.css">
+  <script src="/Agendamento/javascript/login.js" defer></script>
+
+
+  <title>Style e ClassList</title>
+</head>
+<body>
+  <main>
+    <section id="login">
+      <h2 id="title">Login</h2>
+      <form action="">
+        <label for="login-usuario">Nome de usuário:</label>
+        <input type="text" id="login-usuario" name="login-usuario" class="error">        
+        <p id="username-error" class="error-text">*Usuário inválido</p>
+
+        <label for="login-senha">Senha:</label>
+        <input type="password" id="login-senha" name="login-senha" class="correct">
+        <p id="password-error-text" class="error-text">*Sennha incorreta</p>
+
+    <div class="btn-container">
+        <button type="button" id="btnLogin"  >Fazer login</button>
+        <button type="button"  id="btnCadastrese" >Cadastre-se</button>
+        <button type="button" id="btnEsqueceu">Esqueceu a senha</button>
+    </div>  
+      </form>
+    </section>
+  </main>
+</body>
+</html>
