@@ -114,7 +114,7 @@ textarea {
     }
     .menu {
         position: absolute;
-        top: -10px; /* Ajuste conforme necessário */
+        top:10px; /* Ajuste conforme necessário */
         right: 500px; /* Ajuste conforme necessário */
         font-size: 20px; /* Tamanho da fonte desejado */
         padding: 0px;
