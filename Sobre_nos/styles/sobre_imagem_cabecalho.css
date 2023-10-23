@@ -58,3 +58,26 @@ body {
     font-size: 25px;
     margin-right: 40%;
 }
+/*@media(max-width: 1315px) {
+    .logo{
+        width: 100%;
+    }
+    .lista {
+        width: 90%;
+        overflow-y: scroll;
+        height: 600px;
+    }
+    .item_lista{
+        min-width: 500px;
+    }
+    .nav{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+}
+@media(max-width: 1849px){
+    .lista{
+        width: 85%;
+    }
+}
