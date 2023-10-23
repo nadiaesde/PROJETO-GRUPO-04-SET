@@ -1,19 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-    body{
-        width: 100vw;
-        height: 100vh;
-        /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
-        font-size: 14px;
-        line-height: 1.42857143;
-        color: #333;
-        background-color: #ebe1e1;
-    }
-    
+body {
+    background-color: white;
+}
+
 .cabecalho{
     display: flex;
     justify-content: space-around;
@@ -23,11 +11,21 @@
     font-style: normal;
     position: absolute;
     width: 100%;
+    flex-wrap: wrap;
+    
+
 }
-.cabecalho h1{
-    color: white;
-    text-shadow: 1px 1px 20px black;
+.cabecalho h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 10px black;
+    display: flex;
+    font-size:35px;
+    
+    
 }
+
+
+
 .imagem_banner{
     width: 100%;
     height: 500px;
@@ -46,165 +44,118 @@
     font-size: 22px;
     display: flex;
     flex-direction: column;
-    }
+}
  .menu{
         background-color: #f1f1f1;
         height: 1px;
         width: 0%;
         transition: 1s;
-    }
+}
 .nav a:hover .menu{
-        width: 100%;
-    }
-.Titulo{
-    /*font-family: 'Roboto', sans-serif;*/
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 30px;
-    font-size: 4em;
-    color: #333;
+        width: 100%; 
+}
+.header {
+    background-color: black;
+    color: white;
     text-align: center;
-}
-.sub-titulo{
-    /*font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;*/
-    font-weight: bold;
-    margin-bottom: 30px;
-    font-size: 3em;
-    color: #333;
-    text-align: center;
-}
- 
-.servicos_conteiner{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-}
-.titulo_servico{
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 30px;
-    font-size: 1.5em;
-    color: #f1f1f1;
-    
+    padding: 10px;
 }
 
-.paragrafo {
-    font-family: 'Lora', serif;
-    flex-wrap: wrap;
-    border: 1px;
-    color: #f3eded;
+.footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.main-image {
     width: 100%;
-    font-size: 16px;
-    text-shadow: 1px 1px 20px black;
-    /* height: auto; */
-    contain: layout;
-
 }
-.lista{
-    width: 62%;
-    height: auto;
+
+ul{
     display: flex;
-    flex-wrap: wrap;
-    border: 2px solid red;
-    gap: 20px;
-    justify-content: space-around;
-    list-style: none;
-    padding: 20px 0;
-    margin-bottom: 50px;
+    justify-content:space-around;
+    align-items:center;
+    margin: auto;
 }
-.item_lista{
-    width: 45%;
-    height: auto;
-    border: 2px solid rgb(29, 153, 50);
-    padding: 10px;   
-}
-#imagem1{background-image: url(./imagens-nadia/HIGIENIZACAO_INTERNA.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #0801016e;
-    background-blend-mode: multiply;
-}
-#imagem2{ 
-    /*background-image: url(./imagens-nadia/HIGIENIZACAO_EXTERNA.jpg);*/
-    background-image: linear-gradient(#c9bbbb,#111111);
+section {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    margin: auto;
 }
 
-
-#imagem3{background-image: url(./imagens-nadia/LIPEZA_TECNICA.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #0801016e;
-    background-blend-mode: multiply;}
-#imagem4{
-    /*background-image: url(./imagens-nadia/REVITALIZACAO_FAROIS.jpg);*/
-    background-image: linear-gradient(#c9bbbb,#111111);
+#formulario-contato {
+    background-color: #f0f0f0;
+    padding: 10px;    /* padding: 10px; */
+    width: 98%;    /* width: 98%; */
+    position:relative;    /* position: absolute; */
+    overflow: hidden;
+    bottom: 0;
+    margin: 0; 
+    top: 0px;
 }
-#imagem5{background-image: url(./imagens-nadia/POLIMENTO.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #0801016e;
-    background-blend-mode: multiply;}
-#imagem6{
-    /*background-image: url(./imagens-nadia/IPERMEABILIZACAO_VIDRO.jpg);*/
-    background-image: linear-gradient(#c9bbbb,#111111);}
+
+.h2,
+.contato {
+    text-align: center;
+}
+
+div .linha {
+    margin-bottom: 0px; /* Espaçamento inferior entre linhas  no outro esta 50px*/
+}
+
+/* Estilize as colunas do formulário */
+.coluna {
+    width: 48%; /* 48% de largura para ocupar metade do retângulo */
+    margin-right: 10%; /* Espaço entre as colunas */
+    display: flexbox; /*   display: inline-block; */
+    float: left;
+}
+/* Limpe o float após as colunas */
+.coluna:last-child {
+    margin-right: 0; /* Remova o espaçamento direito da última coluna */
+}
+/* Estilize o botão de envio */
+input[type="submit"] {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remova a borda do botão */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    cursor: pointer; /* Altere o cursor ao passar o mouse */
+}
+/* Estilize o botão de envio quando o mouse estiver sobre ele */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Cor de fundo alterada no hover */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+    width: 100%; /* Ocupa 100% da largura do contêiner */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.linha::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contato-container { 
+    display:flex;
+    flex-direction:row ; /* Alinhe na horizontal */
+ }
 
 .contato-texto {
     padding: 10px;
     max-width: 50%; /*Limite a largura para evitar sobreposição com o formulário */
     text-align: right;
 }
-#formulario-modal{
-    width: 100vw;
-    height: 100vh;
-    background-color: #3333338d;
-    position: fixed;
-    left: 0%;
-    top: 0px;
-}
-#formulario-colaborador {
-    background-color: #f0f0f0;
-    padding: 20px;
-    width: 70%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-.btn-cancelar{
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    background-color: rgb(124, 5, 5);
-    color: #fff;
-    cursor: pointer;
-    transition: 300ms;
 
-}
-.btn-cancelar:hover{
-    background-color:rgb(221, 90, 90) ;
-}
-@media(max-width: 1315px) {
-    .sub-titulo{
-        font-size: 2em;
-    }
-    .lista {
-        width: 90%;
-        overflow-y: scroll;
-        height: 600px;
-    }
-    .item_lista{
-        min-width: 500px;
-    }
-    .nav{
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-    }
-}
-@media(max-width: 1849px){
-    .lista{
-        width: 85%;
-    }
+#nome {
+    width: 200%;
 }
