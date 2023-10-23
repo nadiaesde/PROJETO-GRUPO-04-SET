@@ -1,12 +1,66 @@
 body {
     background-color: white;
 }
+
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: xxx-large;
+    gap: 20%;
+    font-style: normal;
+    position: absolute;
+    width: 100%;
+    flex-wrap: wrap;
+    
+
+}
+.cabecalho h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 10px black;
+    display: flex;
+    font-size:35px;
+    
+    
+}
+
+
+
+.imagem_banner{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: inline-block;
+    z-index: 1;
+}
+.nav{
+    display: flex;
+    gap: 10px;
+}
+.nav a{
+    color: white;
+    text-shadow: 1px 1px 20px black;
+    text-decoration: none;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+}
+ .menu{
+        background-color: #f1f1f1;
+        height: 1px;
+        width: 0%;
+        transition: 1s;
+}
+.nav a:hover .menu{
+        width: 100%; 
+}
 .header {
-    background-color: rgb(7, 7, 7);
+    background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
 }
+
 .footer {
     background-color: green;
     color: white;
@@ -15,18 +69,11 @@ body {
 }
 .main-image {
     width: 100%;
-    }
-.imagem_banner{
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    display: inline-block;
-    z-index: 1;
-    }
+}
 
 ul{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:center;
     margin: auto;
 }
@@ -111,51 +158,4 @@ textarea {
 
 #nome {
     width: 200%;
-    }
-    .menu {
-        position: absolute;
-        top:10px; /* Ajuste conforme necessário */
-        right: 500px; /* Ajuste conforme necessário */
-        font-size: 20px; /* Tamanho da fonte desejado */
-        padding: 0px;
-        margin-bottom: 10px; /*  10px  Espaço entre os itens do menu suspenso */ 
-        background-color: aqua;   
-    }
-    
-    .menu ul {
-        list-style: none;
-        padding: 0;
-    }
-    .menu li {
-        display: inline; /* Exibe os itens do menu em linha */
-        margin-right: 20px; /* Espaço entre os itens do menu */
-        position: relative; /* Define a posição relativa para posicionar o submenu */ 
-    
-    }
-    
-    .menu ul li a {
-        color: #333; /* Cor padrão do texto do link */
-        text-decoration: none; /* Remover sublinhado padrão */
-        transition: 500ms linear;        
-    }
-    
-    .menu ul li a:hover {
-        color: black; /* Cor quando o mouse passa sobre o link */
-    }
-    
-    .submenu {
-        position: absolute;
-        top: 100%; /* Posiciona abaixo do item do menu principal */
-        left: 0;
-        display: none;
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 10px;
-    }
-       /* Mostra o submenu quando o item do menu principal é hover */
-.menu li:hover .submenu {
-    display: block;
 }
-/* Seletor para remover o sublinhado de links no menu */
-header .menu ul li a {
-text-decoration: none;
-color: white;
