@@ -151,7 +151,9 @@
 #imagem6{
     /*background-image: url(./imagens-nadia/IPERMEABILIZACAO_VIDRO.jpg);*/
     background-image: linear-gradient(#c9bbbb,#111111);}
+#modal-servicos{
 
+}
 .contato-texto {
     padding: 10px;
     max-width: 50%; /*Limite a largura para evitar sobreposição com o formulário */
@@ -164,6 +166,11 @@
     position: fixed;
     left: 0%;
     top: 0px;
+}
+.formulario-modal{
+    color: #fff;
+    background-color: #333333;
+    padding-top: 40px;
 }
 #formulario-colaborador {
     background-color: #f0f0f0;
