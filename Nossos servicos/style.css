@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-body {
-    background-color: white;
-}
 
-=======
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@700&display=swap');
 *{
     margin: 0;
@@ -20,7 +15,7 @@ body {
         background-color: #ebe1e1;
     }
     
->>>>>>> 34f05ddc82caca1e13ca8c99e03bbb78d215a31b
+
 .cabecalho{
     display: flex;
     justify-content: space-around;
@@ -30,29 +25,13 @@ body {
     font-style: normal;
     position: absolute;
     width: 100%;
-<<<<<<< HEAD
-    flex-wrap: wrap;
-    
 
-}
-.cabecalho h1 {
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 10px black;
-    display: flex;
-    font-size:35px;
-    
-    
-}
-
-
-
-=======
 }
 .cabecalho h1{
     color: white;
     text-shadow: 1px 1px 20px black;
 }
->>>>>>> 34f05ddc82caca1e13ca8c99e03bbb78d215a31b
+
 .imagem_banner{
     width: 100%;
     height: 500px;
@@ -71,118 +50,14 @@ body {
     font-size: 22px;
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
-}
-=======
     }
->>>>>>> 34f05ddc82caca1e13ca8c99e03bbb78d215a31b
+
  .menu{
         background-color: #f1f1f1;
         height: 1px;
         width: 0%;
         transition: 1s;
-<<<<<<< HEAD
-}
-.nav a:hover .menu{
-        width: 100%; 
-}
-.header {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
 
-.footer {
-    background-color: green;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-.main-image {
-    width: 100%;
-}
-
-ul{
-    display: flex;
-    justify-content:space-around;
-    align-items:center;
-    margin: auto;
-}
-section {
-    display: flex;
-    justify-content:space-around;
-    align-items:center;
-    margin: auto;
-}
-
-#formulario-contato {
-    background-color: #f0f0f0;
-    padding: 10px;    /* padding: 10px; */
-    width: 98%;    /* width: 98%; */
-    position:relative;    /* position: absolute; */
-    overflow: hidden;
-    bottom: 0;
-    margin: 0; 
-    top: 0px;
-}
-
-.h2,
-.contato {
-    text-align: center;
-}
-
-div .linha {
-    margin-bottom: 0px; /* Espaçamento inferior entre linhas  no outro esta 50px*/
-}
-
-/* Estilize as colunas do formulário */
-.coluna {
-    width: 48%; /* 48% de largura para ocupar metade do retângulo */
-    margin-right: 10%; /* Espaço entre as colunas */
-    display: flexbox; /*   display: inline-block; */
-    float: left;
-}
-/* Limpe o float após as colunas */
-.coluna:last-child {
-    margin-right: 0; /* Remova o espaçamento direito da última coluna */
-}
-/* Estilize o botão de envio */
-input[type="submit"] {
-    background-color: #007bff; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    border: none; /* Remova a borda do botão */
-    border-radius: 5px; /* Cantos arredondados do botão */
-    cursor: pointer; /* Altere o cursor ao passar o mouse */
-}
-/* Estilize o botão de envio quando o mouse estiver sobre ele */
-input[type="submit"]:hover {
-    background-color: #0056b3; /* Cor de fundo alterada no hover */
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
-    width: 100%; /* Ocupa 100% da largura do contêiner */
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.linha::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.contato-container { 
-    display:flex;
-    flex-direction:row ; /* Alinhe na horizontal */
- }
-
-=======
     }
 .nav a:hover .menu{
         width: 100%;
@@ -285,18 +160,13 @@ textarea {
 #modal-servicos{
 
 }
->>>>>>> 34f05ddc82caca1e13ca8c99e03bbb78d215a31b
+
 .contato-texto {
     padding: 10px;
     max-width: 50%; /*Limite a largura para evitar sobreposição com o formulário */
     text-align: right;
 }
-<<<<<<< HEAD
 
-#nome {
-    width: 200%;
-}
-=======
 #formulario-modal{
     width: 100vw;
     height: 100vh;
@@ -356,4 +226,4 @@ textarea {
         width: 85%;
     }
 }
->>>>>>> 34f05ddc82caca1e13ca8c99e03bbb78d215a31b
+
