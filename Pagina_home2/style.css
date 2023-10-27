@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@700&display=swap');
 body {
-    background-color: rgb(241, 246, 243);
+    background-color: rgb(255, 255, 255);
 }
 
 .cabecalho{
@@ -75,7 +75,7 @@ body {
 }
 
 .footer {
-    background-color: green;
+    background-color:#333333;;
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
@@ -91,92 +91,125 @@ ul{
     margin: auto;
     list-style:none;
 }
+button{
+    border: 3px solid #91dc5b;
+    padding: 10px 30px;
+    color: #91dc5b;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1em;
+    transition: all .5s ease;
+    border-radius: 0px !important;
+    margin: 20px;
+}
 section {
     display: flex;
     justify-content:space-around;
     align-items:center;
-    margin: auto;
+    margin: 10px;
     list-style:none;
 }
 
 
-
-#formulario-contato {
-    background-color: #000000;
-    padding: 10px;    /* padding: 10px; */
-    width: 98%;    /* width: 98%; */
-    position:relative;    /* position: absolute; */
-    overflow: hidden;
-    bottom: 0;
-    margin: 0; 
-    top: 0px;
+.footer.footer{
+    height: 100%;
+    background: #333333;
+    position: relative;
+}
+.fale-conosco{
+    text-decoration: none;
+}
+.contato{
+    margin-left: 45px;
+}
+.footer.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.footer.footer .container > div{
+    flex-grow:1;
+    flex-basis: 0;
+    padding: 3rem 0.9rem;
+}
+.footer h2{
+    color:#fff;
+}
+.footer p{
+    font-size: 15px;
+    color: bisque;
+}
+.footer .sobre-nos{
+    margin-left: 30px;
+}
+.rede-sociais{
+    color: #fff;
+    align-items: center;
+}
+.rede-sociais .fa-facebook-f{
+    height: 0;
+width: 17px;
+font-size: 20px;
+line-height:40px;
+margin: 0px 2px 0;
+    color:#87ceeb;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.rede-sociais .fa-facebook-f:hover{
+    color:#fff;
+    transform: translateY(-9px);
 }
 
-.h2,
-.contato {
+.rede-sociais .fa-twitter{
+    height: 0;
+width: 17px;
+font-size: 20px;
+line-height:40px;
+margin: 0px 2px 0;
+    color:#87ceeb;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.rede-sociais .fa-twitter:hover{
+    color:#fff;
+    transform: translateY(-9px);
+}
+
+.rede-sociais .fa-instagram{
+    height: 0;
+width: 17px;
+font-size: 20px;
+line-height:40px;
+margin: 0px 2px 0;
+    color:#87ceeb;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.rede-sociais .fa-instagram:hover{
+    color:#fff;
+    transform: translateY(-9px);
+}
+
+.rede-sociais .fa-whatsapp{
+    height: 0;
+width: 17px;
+font-size: 20px;
+line-height:40px;
+margin: 0px 2px 0;
+    color:#87ceeb;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.rede-sociais .fa-whatsapp:hover{
+    color:#fff;
+    transform: translateY(-9px);
+}
+.texto-copy{
+    color:aquamarine;
     text-align: center;
 }
-
-div .linha {
-    margin-bottom: 0px; /* Espaçamento inferior entre linhas  no outro esta 50px*/
-}
-
-/* Estilize as colunas do formulário */
-.coluna {
-    width: 48%; /* 48% de largura para ocupar metade do retângulo */
-    margin-right: 10%; /* Espaço entre as colunas */
-    display: flexbox; /*   display: inline-block; */
-    float: left;
-}
-/* Limpe o float após as colunas */
-.coluna:last-child {
-    margin-right: 0; /* Remova o espaçamento direito da última coluna */
-}
-/* Estilize o botão de envio */
-input[type="submit"] {
-    background-color: #007bff; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    border: none; /* Remova a borda do botão */
-    border-radius: 5px; /* Cantos arredondados do botão */
-    cursor: pointer; /* Altere o cursor ao passar o mouse */
-}
-/* Estilize o botão de envio quando o mouse estiver sobre ele */
-input[type="submit"]:hover {
-    background-color: #0056b3; /* Cor de fundo alterada no hover */
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
-    width: 100%; /* Ocupa 100% da largura do contêiner */
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.linha::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.contato-container { 
-    display:flex;
-    flex-direction:row ; /* Alinhe na horizontal */
- }
-
-.contato-texto {
-    padding: 10px;
-    max-width: 50%; /*Limite a largura para evitar sobreposição com o formulário */
-    text-align: right;
-}
-
-#nome {
-    width: 200%;
-}
-
 
 
 
