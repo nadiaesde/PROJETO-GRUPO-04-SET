@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@700&display=swap');
 body {
     background-color: white;
 }
@@ -15,13 +16,17 @@ body {
     
 
 }
+#titulo{
+    position: absolute;
+    top: 200px;
+    left: 10%;
+}
 .cabecalho h1 {
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 10px black;
     display: flex;
     font-size:35px;
-    
-    
+
 }
 
 
@@ -50,6 +55,7 @@ body {
         height: 1px;
         width: 0%;
         transition: 1s;
+        left: 50%;
 }
 .nav a:hover .menu{
         width: 100%; 
