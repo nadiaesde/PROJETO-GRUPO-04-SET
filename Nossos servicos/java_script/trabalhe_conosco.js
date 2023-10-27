@@ -13,6 +13,7 @@ function controladorModal() {
 }
 mostrarFormularioContato.addEventListener("click", controladorModal );
 botaoCancelar.addEventListener("click", controladorModal) 
+
 function modalServicos(){
     let servicos = document.querySelectorAll(".item_lista")
     for (let index = 0; index < servicos.length -1; index++) {
@@ -35,3 +36,4 @@ function modalServicos(){
     }
 }
 modalServicos()
+
