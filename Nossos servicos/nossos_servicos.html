@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="pt-br">
 <head>
     
@@ -7,6 +8,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="javascript.js">
     <title>EcoClean</title>
+=======
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Serviços</title>
+    <link rel="stylesheet" href="./nossos_servicos_rodape.css">
+    <link rel="stylesheet" type="text/css" href="../Trabalhe_conosco/Trabalhe_conosco.css">
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" defer src="./java_script/trabalhe_conosco.js"></script>  
+>>>>>>> 34f05ddc82caca1e13ca8c99e03bbb78d215a31b
 </head>
 <body>
     <header class="cabecalho">
@@ -14,6 +25,7 @@
        <!--<img src="/Nossos servicos/imagens-nadia/LOGO SITE 2.jpg"Logo do Meu Site">-->
         <nav class="nav">
                 <a href="/Pagina_home2/index.html">Página Inicial <span class="menu"></span></a>
+<<<<<<< HEAD
                 <a href="../Sobre_nos/Sobre.html">Sobre nós<span class="menu"></span></a>
                 <a href="#">Nossos Serviços<span class="menu"></span></a>
                 <a href="#formulario-contato">Contato<span class="menu"></span></a>
@@ -108,6 +120,161 @@
                 <label for="assunto">Assunto:</label>
                 <input type="text" id="assunto" name="assunto" required>
             </div>
+=======
+                <a href="/Sobre_nos/Sobre.html">Sobre nós<span class="menu"></span></a>
+                <a href="#">Nossos Serviços<span class="menu"></span></a>
+                <a href="#formulario-contato">Contato<span class="menu"></span></a>
+                <a href="javascript:void(0);" id="mostrarFormularioColaborador">Trabalhe Conosco<span class="menu"></span></a>
+                <a href="/Agendamento/Login.html">AGENDE AQUI</a>
+            
+        </nav>
+    </header>
+      <img class="imagem_banner" src="./imagens-nadia/carro paisagem2.jpg" alt="Carro paisagem"> 
+      <div class="servicos_conteiner">
+        <h2 class="Titulo">Nossos Serviços</h3>
+        <h3 class="sub-titulo">EcoClean Limpeza Total: Higienizamos Seu Veículo Onde Você Estiver!</h3>
+        <ul class="lista">
+            <li class="item_lista" id="imagem1">
+            <h4 class="titulo_servico">Higienização de Interna</h4>
+            <p class="paragrafo">É um processo de limpeza e desinfecção do interior do veículo, com o objetivo de remover sujeira, manchas, odores e bactérias. A higienização interna proporciona um ambiente limpo e saidável para os ocupantes do veículo, elimminando os odores desagráveis e prevenindo a proliferação de bactérias e germes e é uma opão recomendada para quem deseja manter ahigiene e conforto do interior do veículo, em um ambiente notadamente saudável.</p>
+        </li>
+        <li class="item_lista" id="imagem2">
+            <h4 class="titulo_servico" >Higienização Externa</h4>
+            <p class="paragrafo">Do pneus ao teto, tudo brilhando. Não risca, protege a pintura e permanece limpo mais tempo. Não utilizamos água, nossa higienização atende a todos os requisitos mundiais de preservação ambiental. Com O polimento final, mantendo o brilho por muito mais tempo.
+            </p>
+        </li>
+        <li  class="item_lista" id="imagem3">                  
+            <h4 class="titulo_servico">Limpeza Técnica</h4>
+            <p class="paragrafo">É um processo que utiliza técnicas e produtos específicos para minimizar o risco de danos na pintuta e nas partes sensíveis do carro. A lavagem técnica visa remover a sujeira e os contaminantes da superfície do véculo, sem danificar a pintuta ou causar arranhões. Além disso, a lavagem técnica também inclui a d=secagem adequada do veículo, cm ouso de panos de microfibra e sopradores de ar, para evitar marcas de água na pintura.
+            </p>
+        </li>
+        <li class="item_lista" id="imagem4">
+            <h4 class="titulo_servico">Revitalização de Faróis</h4>
+            <p class="paragrafo">É um processo de restauração de lentes de faróis que ficaram desgastadas, opacas ou amareladas pelo tempo e exposição ao raios UV. Faróis desgastados podem prejudicar a ilminação e visibilidade noturna do veículo, tornando a conduão mais perigosa. O processo inclui ua limpeza profunda da lente do farol, para remover sujeira e resíduos de limpeza abrasivo, que éesfregado na superfície da lente com uma ferramenta de polimento rotativa.</p>
+        </li>
+        <li class="item_lista" id="imagem5">
+            <h4 class="titulo_servico">Espelhamento</h4>
+            <p class="paragrafo">Para que a visão do motorista não seja prejudicada em dias de chuva, recomendamos a impermeabilização dos vidros, feita com produto apropriado.</p>
+        </li>
+        <li class="item_lista" id="imagem6">
+            <h4 class="titulo_servico">Ipermeabilização de Vidros</h4>
+            <p class="paragrafo">Tecnologia importada para a revitalização da pintura. Recomendamos este serviço quando a pintura do carro estiver queimada do sol e opaca, quando há riscos no verniz ou manchas de tintas.</p>
+        </li>
+
+        </ul>
+        <dialog id="modal-servicos">
+
+        </dialog>
+        <!--modal -->
+    <div class="modal fade in" id="actionModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden= "false" style="display:bloc;">
+        <div class="modal-dialog" role="document"> 
+            <div class="modal-content"> 
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
+                    <span aria-hidden="true">x</span>
+                <button>
+                    <h4 class="modal-tittle" id="myModalLabel">ASPIRACAÇÃO/ LIMPEZA DA CABINE</h4>
+                    </div> 
+                    <div class="modal-body">
+                      <figure class="text-center"> 
+                        <img src="/imagens/foto_aspiracao_limpeza_cabine.webp" alt="ASPIRAÇÃO / ÇIMPEZA DA CABINE" width="568" height="290" src-orig="https://i1.wp.com/carwashecologico.com.br/wp-conte…loads/2016/09/dash.png?zoom=2&fit=390%2C199&ssl=1">
+
+                      </figure>  
+
+                    </div>
+        </div>
+    </div>
+      </div> 
+      <footer>
+        <div id="formulario-contato">
+            <h2 class="contato">CONTATO</h2>
+        <div class="contato-container">
+            <div class="contato-texto">
+            <!-- <form action="mailto:jctinelli@hotmail.com" method="post" enctype="text/plain"> -->
+
+                <p>
+                    <b>Horário:</b> <br>
+                    De Segunda a Sabado - 08:00 - 18:00
+                </p>
+                <p>
+                    <b>Telefones:</b> <br>
+                    <b>Escritório</b> Av Àguas limpas - Cidade- Protegida <br> (88)99888-8888 | (33) 3333-3333 <br/>
+                    
+                </p>
+                <p>
+                    <b>E-mail:</b> <br>
+                contato@EcoClean.com.br
+                </p>
+            </div>
+        <form action="mailto:jctinelli@hotmail.com" method="post" enctype="text/plain">
+            <div class="linha">
+                <div class="coluna">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="coluna">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="coluna">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="coluna">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+            </div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <input type="submit" value="Enviar">
+            <div id="mensagem-enviada" style="display: none;">
+                <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
+            </div>
+        </form>
+        </div>    
+        </div>
+    </div> <!-- Resto do conteúdo da página -->
+<!--    <div id="formulario-colaborador" style="display: none;">
+            <h2>Trabalhe Conosco</h2>
+            <form action='mailto:' + email + method="post" enctype="text/plain">  <form action="processar_formulario.php" method="post"> 
+                <div class="linha">
+                    <div class="coluna">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="coluna">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="coluna">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </div>
+                </div>
+                <label for="arquivo">Selecionar Arquivo:</label>
+                <input type="file" id="arquivo" name="arquivo" accept=".pdf, .doc, .docx" required><br><br>
+                <input type="submit" value="Enviar">
+
+                <div id="mensagem-enviado" style="display: none;">
+                    <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
+                </div>
+            </form>
+        </div> --> <!-- Resto do conteúdo da página -->
+</footer> 
+<div class="formulario-modal" style="display: none;">
+    <div id="formulario-colaborador" >
+    <h2>Trabalhe Conosco</h2>
+    <form action='mailto:' + email + method="post" enctype="text/plain"> <!-- <form action="processar_formulario.php" method="post"> -->
+        <div class="linha">
+            <div class="coluna">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+>>>>>>> 34f05ddc82caca1e13ca8c99e03bbb78d215a31b
         </div>
         <div class="linha">
             <div class="coluna">
@@ -119,6 +286,7 @@
                 <input type="tel" id="telefone" name="telefone" required>
             </div>
         </div>
+<<<<<<< HEAD
             <label for="mensagem">Mensagem:</label>
             <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
             <input type="submit" value="Enviar">
@@ -136,3 +304,19 @@
     
 </body>
 </html>
+=======
+        <label for="arquivo">Selecionar Arquivo:</label>
+        <input type="file" id="arquivo" name="arquivo" accept=".pdf, .doc, .docx" required><br><br>
+        <input type="submit" value="Enviar">
+        <button class="btn-cancelar"  > Cancelar </button>
+
+        <div id="mensagem-enviado" style="display: none;">
+            <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
+        </div>
+    </form>
+</div> <!-- Resto do conteúdo da página -->  
+</div>  
+</body>
+
+</html>
+>>>>>>> 34f05ddc82caca1e13ca8c99e03bbb78d215a31b

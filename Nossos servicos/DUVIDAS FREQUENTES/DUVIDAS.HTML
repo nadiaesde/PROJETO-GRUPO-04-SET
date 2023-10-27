@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perguntas e Respostas</title>
+    <style>
+        .answer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Perguntas Frequentes</h1>
+
+    <div class="question">
+        <h2>Pergunta 1</h2>
+        <p>Qual é a capital do Brasil?</p>
+        <p class="answer">Resposta: A capital do Brasil é Brasília.</p>
+    </div>
+
+    <div class="question">
+        <h2>Pergunta 2</h2>
+        <p>Quantos planetas existem no sistema solar?</p>
+        <p class="answer">Resposta: Existem oito planetas no sistema solar.</p>
+    </div>
+
+    <div class="question">
+        <h2>Pergunta 3</h2>
+        <p>Como fazer um café perfeito?</p>
+        <p class="answer">Resposta: Para fazer um café perfeito, você precisará de café de alta qualidade, água quente, e uma boa técnica de preparação.</p>
+    </div>
+
+    <!-- Adicione mais perguntas e respostas conforme necessário -->
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+
+        questions.forEach((question) => {
+            question.addEventListener('click', () => {
+                question.querySelector('.answer').style.display = (question.querySelector('.answer').style.display === 'none') ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>

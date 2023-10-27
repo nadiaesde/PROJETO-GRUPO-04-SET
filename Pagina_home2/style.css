@@ -28,6 +28,13 @@ body {
     font-size:35px;
 
 }
+#titulo{   
+
+    position: absolute;
+    top: 200px;
+    left: 20%;
+}
+
 
 
 
