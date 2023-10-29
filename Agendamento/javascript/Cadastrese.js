@@ -1,6 +1,8 @@
 const marcaSelect = document.getElementById("veiculo_marca");
 const modeloSelect = document.getElementById("veiculo_modelo");
 
+let btnSubmit = document.querySelector('button[type=submit')
+
 // Dados de modelos por marca
 const modelosPorMarca = {
   Ford: ["Fiesta", "Focus", "Mustang"],
@@ -54,3 +56,11 @@ preencherModelos();
   window.location.href = './calendario.html';  
   return false; // Isso impede o envio normal do formulário
 };
+
+btnSubmit.addEventListener("click", (e)=> {
+
+  alert("Cadastro realizado com sucesso!")
+
+  // e.preventDefault()
+
+});

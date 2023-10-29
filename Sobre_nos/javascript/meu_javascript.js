@@ -2,6 +2,8 @@
 const formularioContato = document.getElementById("formulario-contato");
 const mostrarFormularioContato = document.getElementById("mostrarFormularioContato");
 
+console.log("passou aqui");
+
 // Adiciona um evento de clique ao link "Contato"
 mostrarFormularioContato.addEventListener("click", function () {
     // Verifica o estado atual do formulário e alterna entre mostrar e ocultar
