@@ -44,6 +44,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-//   document.addEventListener('DOMContentLoaded', function () {
-//     // Seu código JavaScript aqui
-// });
+// ...
+
+document.getElementById("btnEsqueceu").addEventListener("click", function () {
+    // Redirecionar para o formulário de redefinição de senha (substitua 'formulario-redefinicao.html' pelo nome do seu arquivo HTML)
+    window.location.href = 'Esqueceu.html';
+});
+
+// ...
