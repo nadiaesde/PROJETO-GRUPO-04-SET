@@ -8,10 +8,29 @@ document.addEventListener('DOMContentLoaded', function () {
     usernameInput.classList.add('correct');
     usernameErrorText.classList.remove('visible');
     passwordErrorText.classList.remove('visible');
+    // ***********************************************************************************
+    usernameInput.classList.remove('error');
+    usernameErrorText.classList.remove('visible');
+
+    // ***********************************************************************************
 
     // Evento de clique no botão "Fazer login"
     document.getElementById('btnLogin').addEventListener('click', function () {
-        // Verificação da senha (substitua pela sua lógica de verificação)
+// ***********************************************************************************
+// Validação do campo de usuário
+        const usuario = usernameInput.value.trim();
+        if (usuario === '' || usuario.length < 4) {
+            usernameInput.classList.add('error');
+            usernameErrorText.classList.add('visible');
+            return; // Impede o envio do formulário se o usuário estiver em branco
+        } else {
+            usernameInput.classList.remove('error');
+            usernameErrorText.classList.remove('visible');
+        }
+// ***********************************************************************************
+// ************************************************************************************************************************
+
+// Verificação da senha (substitua pela sua lógica de verificação)
         if (passwordInput.value === '123456') {
             passwordInput.classList.remove('error');
             passwordErrorText.classList.remove('visible');
@@ -51,4 +70,21 @@ document.getElementById("btnEsqueceu").addEventListener("click", function () {
     window.location.href = 'Esqueceu.html';
 });
 
-// ...
+// ************************************************************************************************************************
+
+function validarUsuario() {
+    const usernameInput = document.getElementById('login-usuario');
+    const usernameErrorText = document.getElementById('username-error');
+
+    const usuario = usernameInput.value.trim();
+
+    if (usuario === '' || usuario.length < 4) {
+        usernameInput.classList.add('error');
+        usernameErrorText.classList.add('visible');
+        return false;
+    } else {
+        usernameInput.classList.remove('error');
+        usernameErrorText.classList.remove('visible');
+        return true;
+    }
+}
