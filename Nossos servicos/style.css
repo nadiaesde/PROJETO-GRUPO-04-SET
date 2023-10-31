@@ -157,9 +157,7 @@
 #imagem6{
     /*background-image: url(./imagens-nadia/IPERMEABILIZACAO_VIDRO.jpg);*/
     background-image: linear-gradient(#c9bbbb,#111111);}
-#modal-servicos{
-
-}
+#modal-servicos{ }
 
 .contato-texto {
     padding: 10px;
