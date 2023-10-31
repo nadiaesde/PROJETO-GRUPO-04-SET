@@ -233,10 +233,10 @@
 }
 .rede-sociais .fa-facebook-f{
     height: 0;
-width: 17px;
-font-size: 20px;
-line-height:40px;
-margin: 0px 2px 0;
+    width: 17px;
+    font-size: 20px;
+    line-height:40px;
+    margin: 0px 2px 0;
     color:#87ceeb;
     cursor: pointer;
     transition: 0.5s;
@@ -248,10 +248,10 @@ margin: 0px 2px 0;
 
 .rede-sociais .fa-twitter{
     height: 0;
-width: 17px;
-font-size: 20px;
-line-height:40px;
-margin: 0px 2px 0;
+    width: 17px;
+    font-size: 20px;
+    line-height:40px;
+    margin: 0px 2px 0;
     color:#87ceeb;
     cursor: pointer;
     transition: 0.5s;
@@ -263,10 +263,10 @@ margin: 0px 2px 0;
 
 .rede-sociais .fa-instagram{
     height: 0;
-width: 17px;
-font-size: 20px;
-line-height:40px;
-margin: 0px 2px 0;
+    width: 17px;
+    font-size: 20px;
+    line-height:40px;
+    margin: 0px 2px 0;
     color:#87ceeb;
     cursor: pointer;
     transition: 0.5s;
@@ -278,10 +278,10 @@ margin: 0px 2px 0;
 
 .rede-sociais .fa-whatsapp{
     height: 50px;
-width: 17px;
-font-size: 20px;
-line-height:40px;
-margin: 0px 2px 0;
+    width: 17px;
+    font-size: 20px;
+    line-height:40px;
+    margin: 0px 2px 0;
     color:#87ceeb;
     cursor: pointer;
     transition: 0.5s;
