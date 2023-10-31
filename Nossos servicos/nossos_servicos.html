@@ -6,19 +6,19 @@
     <link rel="stylesheet" href="./nossos_servicos_rodape.css">
     <link rel="stylesheet" type="text/css" href="/Trabalhe_conosco/Trabalhe_conosco.css">
     <link rel="stylesheet" href="./style.css">
-    <script type="text/javascript" defer src="/Nossos servicos/java_script/trabalhe_conosco.js"></script>  
+    <script type="text/javascript" defer src="./java_script/trabalhe_conosco.js"></script>  
 
 </head>
 <body>
     <header class="cabecalho">
         <h1>EcoClean</h1>
-       <!--<img src="/Nossos servicos/imagens-nadia/LOGO SITE 2.jpg"Logo do Meu Site">-->
+      
         <nav class="nav">
                 <a href="/Pagina_home2/index.html">Página Inicial <span class="menu"></span></a>
                 <a href="/Sobre_nos/Sobre.html">Sobre nós<span class="menu"></span></a>
                 <a href="#">Nossos Serviços<span class="menu"></span></a>
                 <a href="#formulario-contato">Contato<span class="menu"></span></a>
-                <a href="javascript:void(0);" id="mostrarFormularioColaborador">TRABALHE Conosco<span class="menu"></span></a>
+                <a href="javascript:void(0);" id="mostrarFormularioColaborador">Trabalhe Conosco<span class="menu"></span></a>
                 <a href="/Agendamento/Login.html">AGENDE AQUI</a>
             
         </nav>
@@ -80,13 +80,12 @@
     </div>
       </div>
        
-    <footer>
+    <!--<footer>
         <div id="formulario-contato">
             <h2 class="contato">CONTATO</h2>
         <div class="contato-container">
             <div class="contato-texto">
-            <!-- <form action="mailto:jctinelli@hotmail.com" method="post" enctype="text/plain"> -->
-
+           
                 <p>
                     <b>Horário:</b> <br>
                     De Segunda a Sabado - 08:00 - 18:00
@@ -131,40 +130,60 @@
         </form>
         </div>    
         </div>
-    </div> <!-- Resto do conteúdo da página -->
-<!--    <div id="formulario-colaborador" style="display: none;">
-            <h2>Trabalhe Conosco</h2>
-            <form action='mailto:' + email + method="post" enctype="text/plain">  <form action="processar_formulario.php" method="post"> 
-                <div class="linha">
-                    <div class="coluna">
-                        <label for="nome">Nome completo:</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
-                </div>
-                <div class="linha">
-                    <div class="coluna">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="coluna">
-                        <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" required>
-                    </div>
-                </div>
-                <label for="arquivo">Selecionar Arquivo:</label>
-                <input type="file" id="arquivo" name="arquivo" accept=".pdf, .doc, .docx" required><br><br>
-                <input type="submit" value="Enviar">
+    </div> 
+</footer> -->
+<footer class = "footer">
+    <div class = "container">
+        <div class = "sobre-nos">
+            <h2>Integrantes</h2>
+            <h3>Renan Morais Desenvolvedor Frot-End</h3>
+            <img src="#" alt="Foto Renan">
+            <h3>Nadia  Desenvolvedora Frot-End</h3>
+            <img src="#" alt="Foto Nadia">
+            <h3>Jacimar Desenvolvedor Frot-End</h3>
+            <img src="#" alt="Foto Jacimar">
+           
+            </div>
+            <div class = "contato">
+                <h2>Contato</h2>
+                <p>remorais70@gmail.com</p>
+                <p>gmail.com</p>
+                <p>gmail.com</p>
+                
+            </div>
+            <div class = "fale-conosco">
+                <h2>Fale Conosco</h2>
+                <a href="https://api.whatsapp.com/send?phone=5551999787513&text=deixe%20sua%20mensagem" target="_blank">
+                    <img src="/Pagina_home2/img_rodape/whats.jpg" alt="logo whats"></a>
+                    
+                </a>
+                <div class = "flex-row">
+            </div>
+        </div>
+            <div class="rede-sociais">
+                <h2>Rede Sociais</h2>
+                <!--onde ta o # vai o link da rede social-->
+                <a href="https://www.facebook.com/EcoCleanPro23" target="_blank">
+                  <img src="/Pagina_home2/img_rodape/face.jpg" alt="logo face"></a>
+                <a href="https://twitter.com/i/flow/login" target="_blank">
+                  <img src="/Pagina_home2/img_rodape/twitter.jpg" alt="logo twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <img src="/Pagina_home2/img_rodape/insta.jpg" alt="logo insta"></a>
+                
+            </div>
+        </div>
+    </div>   
+    <div class ="texto-copy">
+        copyright @ 2023
+    </div> 
 
-                <div id="mensagem-enviado" style="display: none;">
-                    <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
-                </div>
-            </form>
-        </div> --> <!-- Resto do conteúdo da página -->
-</footer> 
+    
+</footer>
+
 <div class="formulario-modal" style="display: none;">
     <div id="formulario-colaborador" >
     <h2>Trabalhe Conosco</h2>
-    <form action='mailto:' + email + method="post" enctype="text/plain"> <!-- <form action="processar_formulario.php" method="post"> -->
+    <form action='mailto:' + email + method="post" enctype="text/plain"> 
         <div class="linha">
             <div class="coluna">
                 <label for="nome">Nome completo:</label>

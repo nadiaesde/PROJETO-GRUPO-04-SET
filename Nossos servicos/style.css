@@ -167,19 +167,16 @@
     text-align: right;
 }
 
-#formulario-modal{
+.formulario-modal{
     width: 100vw;
     height: 100vh;
     background-color: #3333338d;
     position: fixed;
     left: 0%;
     top: 0px;
+    color: #111111;
 }
-.formulario-modal{
-    color: #fff;
-    background-color: #333333;
-    padding-top: 40px;
-}
+
 #formulario-colaborador {
     background-color: #f4efef;
     padding: 20px;
@@ -200,6 +197,100 @@
 
 .btn-cancelar:hover{
     background-color:rgb(221, 90, 90) ;
+}
+
+.footer.footer{
+    height: 50%;
+    background: #333333;
+    position: relative;
+}
+.fale-conosco{
+    text-decoration: none;
+}
+.contato{
+    margin-left: 45px;
+}
+.footer.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.footer.footer .container > div{
+    flex-grow:1;
+    flex-basis: 0;
+    padding: 3rem 0.9rem;
+}
+.footer h2{
+    color:#fff;
+}
+.footer p{
+    font-size: 15px;
+    color: bisque;
+}
+.footer .sobre-nos{
+    margin-left: 30px;
+}
+.rede-sociais{
+    color: #fff;
+    align-items: center;
+}
+.rede-sociais .fa-facebook-f{
+    height: 0;
+width: 17px;
+font-size: 20px;
+line-height:40px;
+margin: 0px 2px 0;
+    color:#87ceeb;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.rede-sociais .fa-facebook-f:hover{
+    color:#fff;
+    transform: translateY(-9px);
+}
+
+.rede-sociais .fa-twitter{
+    height: 0;
+width: 17px;
+font-size: 20px;
+line-height:40px;
+margin: 0px 2px 0;
+    color:#87ceeb;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.rede-sociais .fa-twitter:hover{
+    color:#fff;
+    transform: translateY(-9px);
+}
+
+.rede-sociais .fa-instagram{
+    height: 0;
+width: 17px;
+font-size: 20px;
+line-height:40px;
+margin: 0px 2px 0;
+    color:#87ceeb;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.rede-sociais .fa-instagram:hover{
+    color:#fff;
+    transform: translateY(-9px);
+}
+
+.rede-sociais .fa-whatsapp{
+    height: 50px;
+width: 17px;
+font-size: 20px;
+line-height:40px;
+margin: 0px 2px 0;
+    color:#87ceeb;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.rede-sociais .fa-whatsapp:hover{
+    color:#fff;
+    transform: translateY(-9px);
 }
 
     

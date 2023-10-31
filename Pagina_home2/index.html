@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/Pagina_home2/javascript.js">
+    <link rel="stylesheet" type="text/css" href="/Trabalhe_conosco/Trabalhe_conosco.css">
+       <script src="./javascript.js" defer></script>
 
     <title>EcoClean</title>
 </head>
@@ -130,7 +131,37 @@
     
         
 </footer>
-    
+<div class="formulario-modal" style="display: none;">
+    <div id="formulario-colaborador" >
+    <h2>Trabalhe Conosco</h2>
+    <form action='mailto:' + email + method="post" enctype="text/plain"> 
+        <div class="linha">
+            <div class="coluna">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+        </div>
+        <div class="linha">
+            <div class="coluna">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="coluna">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+        </div>
+        <label for="arquivo">Selecionar Arquivo:</label>
+        <input type="file" id="arquivo" name="arquivo" accept=".pdf, .doc, .docx" required><br><br>
+        <input type="submit" value="Enviar">
+        <button class="btn-cancelar"  > Cancelar </button>
+
+        <div id="mensagem-enviado" style="display: none;">
+            <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
+        </div>
+    </form>
+</div> <!-- Resto do conteúdo da página -->  
+</div>   
     
     
 </body>

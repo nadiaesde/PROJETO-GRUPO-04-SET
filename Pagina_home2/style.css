@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
 body {
     background-color: rgb(255, 255, 255);
+    width: 100vw;
+        /* height: 100vh; */
+        /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+        /*font-family: 'Roboto', sans-serif;*/
+        font-family: 'Lora', serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #0b0a0a;
+        background-color: #ebe1e1;
 }
 
 .cabecalho{
@@ -13,6 +27,7 @@ body {
     position: absolute;
     width: 100%;
     flex-wrap: wrap;
+    font-family: unset;
     
 
 }
@@ -22,10 +37,12 @@ body {
     left: 10%;
 }
 .cabecalho h1 {
-    color: rgb(255, 255, 255);
+    color: white;
+    text-shadow: 1px 1px 20px black;
+    /*color: rgb(255, 255, 255);
     text-shadow: 1px 1px 10px black;
     display: flex;
-    font-size:35px;
+    font-size:35px;*/
 
 }
 #titulo{   
@@ -33,6 +50,7 @@ body {
     position: absolute;
     top: 200px;
     left: 20%;
+    font-size: 25px;
 }
 
 
@@ -210,8 +228,61 @@ margin: 0px 2px 0;
     color:aquamarine;
     text-align: center;
 }
+.formulario-modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: #3333338d;
+    position: fixed;
+    left: 0%;
+    top: 0px;
+    color: #111111;
+}
 
+#formulario-colaborador {
+    background-color: #f4efef;
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.btn-cancelar{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(124, 5, 5);
+    color: #fff;
+    cursor: pointer;
+    transition: 300ms;
 
+}
+
+.btn-cancelar:hover{
+    background-color:rgb(221, 90, 90) ;
+}
+    
+@media(max-width: 1315px) {
+    .sub-titulo{
+        font-size: 2em;
+    }
+    .lista {
+        width: 90%;
+        overflow-y: scroll;
+        height: 600px;
+    }
+    .item_lista{
+        min-width: 500px;
+    }
+    .nav{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+}
+@media(max-width: 1849px){
+    .lista{
+        width: 85%;
+    }
+}
 
 
 
