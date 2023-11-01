@@ -3,7 +3,9 @@
 <head>
     <link rel="stylesheet" type="text/css" href="./styles/sobre_imagem_cabecalho.css">
     <link rel="stylesheet" type="text/css" href="./styles/sobre_cabecalho.css">
-    <link rel="stylesheet" type="text/css" href="./styles/sobre_rodape_contato.css">
+<!-- ************************************************************************************* -->
+    <link rel="stylesheet" type="text/css" href="./Contato/styles/sobre_rodape_contato.css">
+<!-- *************************************************************************************** -->
     <link rel="stylesheet" type="text/css" href="/Trabalhe_conosco/Trabalhe_conosco.css">    
     <link rel="stylesheet" type="text/css" href="./styles/sobre_redes_sociais.css">    
     <meta charset="UTF-8">
@@ -14,17 +16,12 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="/Sobre_nos/imagens/Sobre_EcoClean.jpg" alt="Eco Clean" style="width: 100%; height:400px;" /> <!-- style="width: 200%; height:300px;" /> -->
-                <!-- <img src="./imagens/Sobre_EcoClean.jpg" alt="Eco Clean" style="width: 100%; height:400px;" /> style="width: 200%; height:300px;" /> -->
-                <!--width: 100%;
-    height: 500px;
-    object-fit: cover;-->
+                <img src="/Sobre_nos/imagens/Sobre_EcoClean.jpg" alt="Eco Clean" style="width: 100%; height:400px;" />
             </div>
         </div>
 
             <div class="logo1">
                 <h6>EcoClean</h6>
-                <!-- <img src="./imagens/1.png" alt="Eco Clean 1" style="width: 10%; height: 90px;"/>                <img src="./imagens/1.png" alt="Eco Clean 1" style="width: 2%; height: 90px;"/> -->
             </div>
 
             <div id="whatsapp-icon">
@@ -58,10 +55,15 @@
                     <li>
                         <a href="/Nossos servicos/nossos_servicos.html">NOSSOS SERVIÇOS</a>
                     </li>
-
+<!-- ******************************************************************************************************************
                     <li>
                         <a href="#contato_form">CONTATO</a>
+                    </li> -->
+                    <li>
+                        <a href="javascript:void(0);" id="mostrarFormularioContato_c">CONTATO</a>
                     </li>
+<!-- **************************************************************************************************************** -->
+
                     <li>
                         <a href="javascript:void(0);" id="mostrarFormularioColaborador">TRABALHE CONOSCO</a>
                     </li>
@@ -71,8 +73,77 @@
                     </li>
 
                 </ul>                    
-                    <!-- ******************************************************************************************************************************************** -->
-                    <div id="formulario-colaborador" style="display: none;">
+
+
+<!-- ***************************************************************************************************************************** -->
+    <div id="formulario-contato_c" style="display:none;  border-radius: 10px;">
+        <h2 class="contato">CONTATO</h2>
+        <form action="mailto:jctinelli@hotmail.com" method="post" enctype="text/plain">
+            <div class="contato-container">
+                <div class="contato-texto">
+                    <p>
+                        <b>Horário:</b> <br>
+                        De segunda-feira á sábado das 10:00 ás 21:00h.
+                    </p>
+                    <p>
+                        <b>Telefones:</b> <br>
+                        <b>Loja</b> - Shopping Vitória ES <br> (27) 99925-1093 <br />
+                        <b>Loja 03</b> - Aeroporto de Vitória <br /> (27) 99925-1093
+                    </p>
+                    <p>
+                        <b>E-mail:</b> <br>
+                        jctinelli@hotmail.com
+                    </p>
+                </div>
+            
+            <div class="linha_l">
+                <div class="coluna_c">
+                    <label for="nome_contato">Nome:</label>
+                    <input type="text" id="nome_contato" name="nome_contato" required>
+                </div>
+            <div class="linha_l">    
+                <div class="coluna_c">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+            </div>
+            <!-- <div class="linha_l"> -->
+                <div class="coluna_c">
+                    <label for="email_contato">Email:</label>
+                    <input type="email" id="email_contato" name="email_contato" required>
+                </div>
+                <div class="coluna_c">
+                    <label for="telefone_contato">Telefone:</label>
+                    <input type="tel" id="telefone_contato" name="telefone_contato" required>
+                </div>
+            <!-- </div> -->
+            <div class="linha_l">
+                <div class="coluna_c">
+                    <label for="mensagem">Mensagem:</label>
+                </div>
+            </div>
+            <div class="linha_l">
+                <div class="coluna_c">
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+            </div>
+            <div class="linha_l">
+                <div class="coluna_c">
+                    <input type="submit" value="Enviar">
+                </div>    
+            </div>
+
+            <div id="mensagem-enviada" style="display: none">
+                <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
+            </div>
+            </div>
+        </form>
+        </div>
+    </div>
+            
+<!-- ************************************************************************************************************************************** -->
+                <!-- ******************************************************************************************************************************************** -->
+                    <div id="formulario-colaborador" style="display: none; border-radius: 10px;">
                         <h2>Trabalhe Conosco</h2>
                         <form action='mailto:' + email method="post" enctype="text/plain"> <!-- <form action="processar_formulario.php" method="post"> -->
                             <div class="linha">
@@ -137,60 +208,9 @@
 </main>
 
 <footer>
-    <div id="formulario-contato">
-        <a name="contato_form"></a>
-        <h2 class="contato">CONTATO</h2>
-        <div class="contato-container">
-            <div class="contato-texto">
-                <!-- <form action="mailto:jctinelli@hotmail.com" method="post" enctype="text/plain"> -->
-
-                <p>
-                    <b>Horário:</b> <br>
-                    De segunda-feira á sábado das 10:00 ás 21:00h.
-                </p>
-                <p>
-                    <b>Telefones:</b> <br>
-                    <b>Loja</b> - Shopping Vitória ES <br> (27) 99925-1093 | (27) 99925-1093 <br />
-                    <b>Loja 03</b> - Aeroporto de Vitória <br /> (27) 99925-1093
-                </p>
-                <p>
-                    <b>E-mail:</b> <br>
-                    jctinelli@hotmail.com
-                </p>
-            </div>
-            <form action="mailto:jctinelli@hotmail.com" method="post" enctype="text/plain">
-                <div class="linha">
-                    <div class="coluna">
-                        <label for="nome_contato">Nome:</label>
-                        <input type="text" id="nome_contato" name="nome_contato" required>
-                    </div>
-                    <div class="coluna">
-                        <label for="assunto">Assunto:</label>
-                        <input type="text" id="assunto" name="assunto" required>
-                    </div>
-                </div>
-                <div class="linha">
-                    <div class="coluna">
-                        <label for="email_contato">Email:</label>
-                        <input type="email" id="email_contato" name="email_contato" required>
-                    </div>
-                    <div class="coluna">
-                        <label for="telefone_contato">Telefone:</label>
-                        <input type="tel" id="telefone_contato" name="telefone_contato" required>
-                    </div>
-                </div>
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-                <input type="submit" value="Enviar">
-
-                <div id="mensagem-enviada" style="display: none;">
-                    <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
-                </div>
-            </form>
-        </div>
-    </div>
     <!--    </div>  Resto do conteúdo da página -->
 </footer>
-    <SCript type="text/javascript" src="/Trabalhe_conosco/meu_javascript.js"></SCript>
+    <SCript type="text/javascript" src="/Trabalhe_conosco/meu_javascript.js" defer></SCript>
+    <script type="text/javascript" src="./Contato/javascript/meu_javascript.js" defer> </script>
 </body>
 </html>

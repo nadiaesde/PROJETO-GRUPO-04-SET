@@ -1,4 +1,4 @@
-#formulario-contato {
+#formulario-contato_c {
     background-color: #f0f0f0;
     padding: 10px;    /* padding: 10px; */
     width: 98,5%;    /* width: 98%; */
@@ -9,6 +9,7 @@
     top: 0px;
     align-items: center;
     /* height: auto; */
+
 }
 
 .h2,

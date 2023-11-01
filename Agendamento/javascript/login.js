@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (usuario === '' || usuario.length < 4) {
             usernameInput.classList.add('error');
             usernameErrorText.classList.add('visible');
+
+
+            
             return; // Impede o envio do formulário se o usuário estiver em branco
         } else {
             usernameInput.classList.remove('error');
