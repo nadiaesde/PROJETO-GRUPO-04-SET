@@ -81,3 +81,8 @@ textarea {
     padding: 0.5% 4.5%;
     height: 50px;
 } 
+
+.cor-expressiva {
+    color: red; /* Altere para a cor desejada */
+    font-weight: bold; /* Você pode adicionar outros estilos, como negrito, se desejar */
+}
