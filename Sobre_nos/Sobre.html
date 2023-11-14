@@ -66,7 +66,9 @@
 <!-- **************************************************************************************************************** -->
 
                     <li>
-                        <a href="javascript:void(0);" id="mostrarFormularioColaborador">TRABALHE CONOSCO</a>
+                        <a href="javascript:void(0);" id="mostrarFormularioColaborador" onclick="alternarFormularioColaborador()">
+                            <span id="menu-texto-colaborador">TRABALHE CONOSCO</span>
+                        </a>
                     </li>
 
                     <li>
@@ -145,7 +147,7 @@
 <!-- ************************************************************************************************************************************** -->
                 <!-- ******************************************************************************************************************************************** -->
                     <div id="formulario-colaborador" style="display: none; border-radius: 10px;">
-                        <h2>Trabalhe Conosco</h2>
+                        <h2 id="colaborador">TRABALHE CONOSCO</h2>
                         <form action='mailto:' + email method="post" enctype="text/plain"> <!-- <form action="processar_formulario.php" method="post"> -->
                             <div class="linha">
                                 <div class="coluna">
@@ -211,7 +213,7 @@
 <footer>
     <!--    </div>  Resto do conteúdo da página -->
 </footer>
-    <SCript type="text/javascript" src="/Trabalhe_conosco/meu_javascript.js" defer></SCript>
+    <!-- <SCript type="text/javascript" src="/Trabalhe_conosco/meu_javascript.js" defer></SCript> -->
     <script type="text/javascript" src="./Contato/javascript/meu_javascript.js" defer> </script>
 </body>
 </html>
