@@ -20,7 +20,8 @@ h1 {
 
 .menu {
     position: absolute;
-    top: 5px; /* Ajuste conforme necessário */
+    top: 2%;
+/*    top: 5px; /* Ajuste conforme necessário */
     right: 500px; /* Ajuste conforme necessário */
     font-size: 20px; /* Tamanho da fonte desejado */
     padding: 0px;
