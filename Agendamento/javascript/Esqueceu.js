@@ -7,16 +7,21 @@ var usuarios = {
 function resetPassword() {
     var username = document.getElementById("username").value;
     var cpfOrCnpj = document.getElementById("cpf").value;
+    var messageContainer = document.getElementById("message-container");
 
     if (usuarios[username] && (usuarios[username].cpf === cpfOrCnpj || usuarios[username].cnpj === cpfOrCnpj)) {
-        // Gerar uma nova senha temporária
-        var new_password = generatePassword();
+       // Gerar uma nova senha temporária
+       var new_password = generatePassword();
 
-        // Simular o envio da nova senha em um pop-up
-        alert("Sua nova senha é: " + new_password);
-        window.location.href = "Login.html"; // Substitua "pagina_de_login.html" pelo URL real da sua página de login.        
+       // Simular o envio da nova senha em um pop-up
+       messageContainer.innerHTML = "Sua nova senha é: " + new_password;
+       //alert("Sua nova senha é: " + new_password);
+        setTimeout(function () {
+            window.location.href = "Login.html";
+        }, 5000); // Aguarda 5 segundos (ajuste conforme necessário)
+
     } else {
-        alert("Usuário não encontrado, CPF ou CNPJ incorretos.");
+        messageContainer.innerHTML = "Usuário não encontrado, CPF ou CNPJ incorretos.";
     }
 }
 

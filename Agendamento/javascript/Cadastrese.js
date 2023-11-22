@@ -3,6 +3,9 @@ const modeloSelect = document.getElementById("veiculo_modelo");
 const cpfCnpjInput = document.getElementById("CPF_CNPJ_input");
 const emailInput = document.getElementById("email");
 const btnSubmit = document.querySelector('button[type=submit]');
+// 
+var messageContainer = document.getElementById("message-container");
+// 
 
 // Dados de modelos por marca
 const modelosPorMarca = {
@@ -132,7 +135,9 @@ btnSubmit.addEventListener("click", (e) => {
   const modelo = modeloSelect.value;
 
   if (marca === "" || modelo === "") {
-    alert("Selecione uma marca e modelo de veículo.");
+
+    messageContainer.innerHTML = "Selecione uma marca e modelo de veículo.";
+//    alert("Selecione uma marca e modelo de veículo.");
     return; // Impede o envio do formulário se os campos de veículos não estiverem preenchidos
   }
   // Valide o campo de e-mail
@@ -140,13 +145,15 @@ btnSubmit.addEventListener("click", (e) => {
   const email = emailInput.value;
 
   if (!isValidEmail(email)) {
-    alert("E-mail inválido. Preencha corretamente.");
+    messageContainer.innerHTML = "E-mail inválido. Preencha corretamente.";
+//    alert("E-mail inválido. Preencha corretamente.");
     return; // Impede o envio do formulário se o e-mail for inválido
   }
   // Valide o campo CPF/CNPJ
   const cpfCnpj = cpfCnpjInput.value;
   if (!isValidCpfCnpj(cpfCnpj)) {
-    alert("CPF ou CNPJ inválido. Preencha corretamente.");
+    messageContainer.innerHTML = "CPF ou CNPJ inválido. Preencha corretamente.";
+    //    alert("CPF ou CNPJ inválido. Preencha corretamente.");
     isValidCpfCnpj.focus();     
     return; // Impede o envio do formulário se o CPF/CNPJ for inválido
   }

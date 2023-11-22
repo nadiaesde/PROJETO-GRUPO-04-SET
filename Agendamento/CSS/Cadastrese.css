@@ -62,3 +62,14 @@
   }
   
   /* Adicione estilos CSS para alinhar os cards lado a lado */
+  #message-container {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   /* background-color: #dff0d8; */
+    padding: 20px;
+/*//    border: 1px solid #3c763d;
+//    color: #3c763d; */
+    /* display: none;  */
+}
