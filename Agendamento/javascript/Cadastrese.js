@@ -3,9 +3,14 @@ const modeloSelect = document.getElementById("veiculo_modelo");
 const cpfCnpjInput = document.getElementById("CPF_CNPJ_input");
 const emailInput = document.getElementById("email");
 const btnSubmit = document.querySelector('button[type=submit]');
+
+var nome_usuario = document.getElementById("nome_usuario").value;
+var senha = document.getElementById("senha").value;
 // 
 var messageContainer = document.getElementById("message-container");
 // 
+
+
 
 // Dados de modelos por marca
 const modelosPorMarca = {
@@ -158,7 +163,19 @@ btnSubmit.addEventListener("click", (e) => {
     return; // Impede o envio do formulário se o CPF/CNPJ for inválido
   }
 
-  // Se chegou até aqui, todos os campos estão preenchidos corretamente
-  // Redirecione para a página de calendário
-  window.location.href = './calendario.html';
+//  messageContainer.innerHTML = "Nome de Usuário: " + nome_usuario + "<br>Senha: " + senha;
+//  document.body.appendChild(messageContainer);
+  
+  function exibirDados() {
+    var nome_usuario = document.getElementById("nome_usuario").value;
+    var senha = document.getElementById("senha").value;
+
+    var messageContainer = document.getElementById("message-container");
+    messageContainer.innerHTML = "Nome de Usuário: " + nome_usuario + "<br>Senha: " + senha;
+}
+  // Exibe os valores no console (substitua pelo que preferir)
+           setTimeout(function () {
+            window.location.href = "./login.html";
+          }, 5000); // Aguarda 5 segundos (ajuste conforme necessário)
+
 });
