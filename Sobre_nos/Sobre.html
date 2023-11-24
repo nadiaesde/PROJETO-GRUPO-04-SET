@@ -3,11 +3,13 @@
 <head>
     <link rel="stylesheet" type="text/css" href="./styles/sobre_imagem_cabecalho.css">
     <link rel="stylesheet" type="text/css" href="./styles/sobre_cabecalho.css">
-<!-- ************************************************************************************* -->
     <link rel="stylesheet" type="text/css" href="./Contato/styles/sobre_rodape_contato.css">
-<!-- *************************************************************************************** -->
     <link rel="stylesheet" type="text/css" href="/Trabalhe_conosco/Trabalhe_conosco.css">    
-    <link rel="stylesheet" type="text/css" href="./styles/sobre_redes_sociais.css">    
+    <link rel="stylesheet" type="text/css" href="./styles/sobre_redes_sociais.css">   
+    
+    <link rel="stylesheet" href="./styles/style.css">
+
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós</title>
@@ -16,20 +18,17 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="/Sobre_nos/imagens/Sobre_EcoClean.jpg" alt="Eco Clean" style="width: 100%; height:400px;" />
+                <img src="/Sobre_nos/imagens/Sobre_EcoClean.jpg" alt="Eco Clean" style="width: 100%; height:400px;">
             </div>
         </div>
 
-            <div class="logo1">
-                <h6>EcoClean</h6>
-            </div>
-
+        <div class="logo1">
+            <h6 id="ecoCleanTitle" style="text-align: left">EcoClean</h6>
+        </div>
+                
             <div id="whatsapp-icon">
                 <a href="https://api.whatsapp.com/send?phone=5527999251093" target="_blank">
                     <img src="/Sobre_nos/imagens/whatsapp.png" alt="WhatsApp">
-                    
-                    <!-- <img src="/Sobre_nos/imagens/whatsapp.png" alt="WhatsApp"> -->
-
                 </a>
             </div>
             <div id="facebook">
@@ -45,7 +44,7 @@
             <div class="menu">
                 <ul>
                     <li>
-                        <a href="/Pagina_home2/index.html">PÁGINA INICIAL</a>
+                        <a href="/index.html">PÁGINA INICIAL</a>
                     </li>
 
                     <li>
@@ -55,18 +54,14 @@
                     <li>
                         <a href="/Nossos servicos/nossos_servicos.html">NOSSOS SERVIÇOS</a>
                     </li>
-<!-- ****************************************************************************************************************** -->
                     <li> <a href="javascript:void(0);" id="mostrarFormularioContato_c" onclick="alternarFormularioContato()">
                         <span id="menu-texto">CONTATO</span>
                         </a>    
                     </li>    
-                <!-- <li>
-                        <a href="javascript:void(0);" id="mostrarFormularioContato_c">CONTATO</a>
-                    </li> -->
-<!-- **************************************************************************************************************** -->
-
                     <li>
-                        <a href="javascript:void(0);" id="mostrarFormularioColaborador">TRABALHE CONOSCO</a>
+                        <a href="javascript:void(0);" id="mostrarFormularioColaborador" onclick="alternarFormularioColaborador()">
+                            <span id="menu-texto-colaborador">TRABALHE CONOSCO</span>
+                        </a>
                     </li>
 
                     <li>
@@ -74,7 +69,6 @@
                     </li>
 
                 </ul>                    
-
 
 <!-- ***************************************************************************************************************************** -->
     <div id="formulario-contato_c" style="display:none;  border-radius: 10px;">
@@ -143,9 +137,8 @@
     </div>
             
 <!-- ************************************************************************************************************************************** -->
-                <!-- ******************************************************************************************************************************************** -->
                     <div id="formulario-colaborador" style="display: none; border-radius: 10px;">
-                        <h2>Trabalhe Conosco</h2>
+                        <h2 id="colaborador">TRABALHE CONOSCO</h2>
                         <form action='mailto:' + email method="post" enctype="text/plain"> <!-- <form action="processar_formulario.php" method="post"> -->
                             <div class="linha">
                                 <div class="coluna">
@@ -175,10 +168,10 @@
                     <!-- *************************************************************************************************************************************************** -->
 
             </div>            
-<!--        </div>    Resto do conteúdo da página -->
-    </header>    
+
+    </header>
 <main>
-    <!-- <div class="container">  -->
+
         <div class="logo_sobre">
             <!-- <img src="./" alt="Eco Clean"  class="Sobre_img_cabecalho"> -->
             <h1 class="texto_sobre_img">O Eco Clean Ecológica</h1>
@@ -205,13 +198,53 @@
                 Apenas 200 ml de água, assim que um carro vai ser lavado por nós do ECO CLEAN!!!
             </p>
         </div>
-    <!-- Conteúdo principal da página, como textos, imagens, vídeos, etc. -->
+
 </main>
 
-<footer>
-    <!--    </div>  Resto do conteúdo da página -->
-</footer>
-    <SCript type="text/javascript" src="/Trabalhe_conosco/meu_javascript.js" defer></SCript>
+    <footer class = "footer">
+        <div class = "container">
+            <div class = "sobre-nos">
+                <h2>Integrantes</h2>
+                <h3>Renan Morais Desenvolvedor Frot-End</h3>
+                <img src="#" alt="Foto Renan">
+                <h3>Nadia  Desenvolvedora Frot-End</h3>
+                <img src="#" alt="Foto Nadia">
+                <h3>Jacimar Desenvolvedor Frot-End</h3>
+                <img src="./imagens/Jacimar.jpg"  alt="Foto Jacimar" style="width: 20%; height:20%;">
+               
+                </div>
+                <div class = "contato">
+                    <h2>Contato</h2>
+                    <p>remorais70@gmail.com</p>
+                    <p>gmail.com</p>
+                    <p>jctinelli@hotmail.com</p>
+                    
+                </div>
+                <div class = "fale-conosco">
+                    <h2>Fale Conosco</h2>
+                    <a href="https://api.whatsapp.com/send?phone=5551999787513&text=deixe%20sua%20mensagem" target="_blank">
+                        <img src="/Pagina_home2/img_rodape/whats.jpg" alt="logo whats"></a>
+                        
+                    </a>
+                    <div class = "flex-row">
+                </div>
+            </div>
+                <div class="rede-sociais">
+                    <h2>Rede Sociais</h2>
+                    <a href="https://www.facebook.com/EcoCleanPro23" target="_blank">
+                      <img src="/Pagina_home2/img_rodape/face.jpg" alt="logo face"></a>
+                    <a href="https://twitter.com/i/flow/login" target="_blank">
+                      <img src="/Pagina_home2/img_rodape/twitter.jpg" alt="logo twitter"></a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <img src="/Pagina_home2/img_rodape/insta.jpg" alt="logo insta"></a>
+                    
+                </div>
+            </div>
+        </div>   
+        <div class ="texto-copy">
+            copyright @ 2023
+        </div> 
+    </footer>
     <script type="text/javascript" src="./Contato/javascript/meu_javascript.js" defer> </script>
 </body>
 </html>

@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastre-se</title>
-  <!-- <link rel="stylesheet" href="./CSS/Cadastrese.css"> Inclua o arquivo CSS para estilizar o formulário -->
   <link rel="stylesheet" href="/Agendamento/CSS/Cadastrese.css"> <!-- Inclua o arquivo CSS para estilizar o formulário -->  
 </head>
+
 <body>
 
   <main>
@@ -63,16 +63,29 @@
                 <option value="Vermelho">Vermelho</option>
                 <option value="Azul">Azul</option>
             </select>
-            <button type="submit" >Gravar</button>
+            <button type="submit" onclick= "exibirDados()">Gravar</button>
         </form>
     </section>
 </main>
-<!-- ********************************************************************************************************************** -->
-  <!-- <script src="./javascript/Cadastrese.js" defer></script> Inclua o arquivo JavaScript para lidar com a submissão do formulário -->
-  <!-- <script src="./javascript/CPF_CNPJ.js" defer></script> -->
-
-  <script src="/Agendamento/javascript/Cadastrese.js" defer></script> <!-- Inclua o arquivo JavaScript para lidar com a submissão do formulário -->
+    <div id="message-container" style="font-size: 30px; color: brown;"></div>
+    <div id="resultado-container" style="font-size: 30px; color: brown;"></div>
+  <script src="/Agendamento/javascript/Cadastrese.js" defer></script>
   <script src="/Agendamento/javascript/CPF_CNPJ.js" defer></script>
+<script>
+
+function exibirDados() {
+
+    var nome_usuario = document.getElementById("nome_usuario").value;
+    var senha = document.getElementById("senha").value;
+
+    var messageContainer = document.getElementById("message-container");
+    // messageContainer.innerHTML = "Nome de Usuário: " +  nome_usuario + "<br>Senha: " + senha;
+    messageContainer.innerHTML = "Nome de Usuário: <span style='color:black;'>" + nome_usuario + "</span><br>Senha: <span style='color: black;'>" + senha + "</span>";    
+}
+
+
+
+</script>  
 </body>
 </html>
 

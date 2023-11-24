@@ -18,7 +18,22 @@ body {
     padding: 0;
     position: relative; /* Define o elemento pai com position: relative */
 }
+/* ************************************************************************************************************ */
 
+#ecoCleanTitle {
+    display: flex;
+    justify-content: flex-start; /* Ajusta para alinhar à esquerda */
+    align-items: flex-start; /* Ajusta para alinhar ao topo */
+    margin: 0;
+    padding: 14%;
+    font-size: 56px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    z-index: 2;
+}
+/* ******************************************************************************************************** */
 .logo1 {
     display: inline-block;
     width: 80%; 

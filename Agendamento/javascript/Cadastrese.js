@@ -4,6 +4,14 @@ const cpfCnpjInput = document.getElementById("CPF_CNPJ_input");
 const emailInput = document.getElementById("email");
 const btnSubmit = document.querySelector('button[type=submit]');
 
+var nome_usuario = document.getElementById("nome_usuario").value;
+var senha = document.getElementById("senha").value;
+// 
+var messageContainer = document.getElementById("message-container");
+// 
+
+
+
 // Dados de modelos por marca
 const modelosPorMarca = {
   Ford: ["Fiesta", "Focus", "Mustang"],
@@ -132,7 +140,9 @@ btnSubmit.addEventListener("click", (e) => {
   const modelo = modeloSelect.value;
 
   if (marca === "" || modelo === "") {
-    alert("Selecione uma marca e modelo de veículo.");
+
+    messageContainer.innerHTML = "Selecione uma marca e modelo de veículo.";
+//    alert("Selecione uma marca e modelo de veículo.");
     return; // Impede o envio do formulário se os campos de veículos não estiverem preenchidos
   }
   // Valide o campo de e-mail
@@ -140,18 +150,32 @@ btnSubmit.addEventListener("click", (e) => {
   const email = emailInput.value;
 
   if (!isValidEmail(email)) {
-    alert("E-mail inválido. Preencha corretamente.");
+    messageContainer.innerHTML = "E-mail inválido. Preencha corretamente.";
+//    alert("E-mail inválido. Preencha corretamente.");
     return; // Impede o envio do formulário se o e-mail for inválido
   }
   // Valide o campo CPF/CNPJ
   const cpfCnpj = cpfCnpjInput.value;
   if (!isValidCpfCnpj(cpfCnpj)) {
-    alert("CPF ou CNPJ inválido. Preencha corretamente.");
+    messageContainer.innerHTML = "CPF ou CNPJ inválido. Preencha corretamente.";
+    //    alert("CPF ou CNPJ inválido. Preencha corretamente.");
     isValidCpfCnpj.focus();     
     return; // Impede o envio do formulário se o CPF/CNPJ for inválido
   }
 
-  // Se chegou até aqui, todos os campos estão preenchidos corretamente
-  // Redirecione para a página de calendário
-  window.location.href = './calendario.html';
+//  messageContainer.innerHTML = "Nome de Usuário: " + nome_usuario + "<br>Senha: " + senha;
+//  document.body.appendChild(messageContainer);
+  
+  function exibirDados() {
+    var nome_usuario = document.getElementById("nome_usuario").value;
+    var senha = document.getElementById("senha").value;
+
+    var messageContainer = document.getElementById("message-container");
+    messageContainer.innerHTML = "Nome de Usuário: " + nome_usuario + "<br>Senha: " + senha;
+}
+  // Exibe os valores no console (substitua pelo que preferir)
+           setTimeout(function () {
+            window.location.href = "./login.html";
+          }, 5000); // Aguarda 5 segundos (ajuste conforme necessário)
+
 });
