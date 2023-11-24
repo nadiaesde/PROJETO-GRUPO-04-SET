@@ -19,7 +19,7 @@ h1 {
 }
 
 .menu {
-    position: absolute;
+   position: absolute;
     top: 2%;
 /*    top: 5px; /* Ajuste conforme necessário */
     right: 500px; /* Ajuste conforme necessário */
