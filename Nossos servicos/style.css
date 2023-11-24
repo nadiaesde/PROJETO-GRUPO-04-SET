@@ -157,7 +157,18 @@
 #imagem6{
     /*background-image: url(./imagens-nadia/IPERMEABILIZACAO_VIDRO.jpg);*/
     background-image: linear-gradient(#c9bbbb,#111111);}
-#modal-servicos{ }
+#modal-servicos{
+   
+    box-sizing: unset;
+    width: 25%;
+    background-image: url(./imagens-nadia/HIGIENIZACAO_INTERNA.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0801016e;
+    background-blend-mode: multiply;
+}
+ }
+
 
 .contato-texto {
     padding: 10px;
