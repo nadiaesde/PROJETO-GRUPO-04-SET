@@ -24,14 +24,14 @@ body {
     display: flex;
     justify-content: flex-start; /* Ajusta para alinhar à esquerda */
     align-items: flex-start; /* Ajusta para alinhar ao topo */
-    margin: 0;
+    margin: 15px;
     padding: 14%;
-    font-size: 56px;
+    font-size: 46px;
     color: white;
     position: absolute;
     top: 0;
     left: -200px;
-    z-index: 2;
+    z-index: 0;
 }
 /* ******************************************************************************************************** */
 .logo1 {
