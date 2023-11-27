@@ -76,7 +76,12 @@
 <!-- ***************************************************************************************************************************** -->
     <div id="formulario-contato_c" style="display:none;  border-radius: 10px;">
         <h2 class="contato">CONTATO</h2>
-        <form action="mailto:jctinelli@hotmail.com" method="post" enctype="text/plain">
+
+        <form action="https://formspree.io/f/your-jctinelli@hotmail.com" method="post">
+            <!-- Seus campos de formulário aqui -->
+
+        <!-- <form action="mailto:jctinelli@hotmail.com" method="post" enctype="text/html"> -->
+            <!-- enctype="text/plain"> -->
             <div class="contato-container">
                 <div class="contato-texto">
                     <p>
@@ -142,7 +147,8 @@
 <!-- ************************************************************************************************************************************** -->
                     <div id="formulario-colaborador" style="display: none; border-radius: 10px;">
                         <h2 id="colaborador">TRABALHE CONOSCO</h2>
-                        <form action='mailto:' + email method="post" enctype="text/plain"> <!-- <form action="processar_formulario.php" method="post"> -->
+                        <form action="https://formspree.io/f/your-jctinelli@hotmail.com" method="post">
+                        <!-- <form action='mailto:' + email method="post" enctype="text/plain"> <form action="processar_formulario.php" method="post"> -->
                             <div class="linha">
                                 <div class="coluna">
                                     <label for="nome">Nome completo:</label>
@@ -163,7 +169,7 @@
                             <input type="file" id="arquivo" name="arquivo" accept=".pdf, .doc, .docx" required><br><br>
                             <input type="submit" value="Enviar">
                 
-                            <div id="mensagem-enviado" style="display: none">
+                            <div id="mensagem-enviada" style="display: none">
                                 <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
                             </div>
                         </form>

@@ -20,9 +20,9 @@ h1 {
 
 .menu {
    position: absolute;
-    top: 2%;
+    top: 1%;
 /*    top: 5px; /* Ajuste conforme necessário */
-    right: 500px; /* Ajuste conforme necessário */
+    right: 250px; /* Ajuste conforme necessário */
     font-size: 20px; /* Tamanho da fonte desejado */
     padding: 0px;
     margin-bottom: 10px; /*  10px  Espaço entre os itens do menu suspenso */    
@@ -65,6 +65,7 @@ h1 {
     /* Seletor para remover o sublinhado de links no menu */
 header .menu ul li a {
     text-decoration: none;
-    /* color:grey; */
-    color: aliceblue;
+    color:  #FFFFFF;
+    /* color:aliceblue; */
+    /* color: aliceblue; */
 }
