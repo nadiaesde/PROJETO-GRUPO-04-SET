@@ -127,44 +127,48 @@
     margin-bottom: 50px;
 }
 .item_lista{
-    width: 45%;
+    width: 47%;
     height: auto;
     border: 2px solid rgb(29, 153, 50);
     padding: 10px;   
 }
-#imagem1{background-image: url(./imagens-nadia/HIGIENIZACAO_INTERNA.jpg);
+#imagem1{/*background-image: url(./imagens-nadia/HIGIENIZACAO_INTERNA.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #0801016e;
-    background-blend-mode: multiply;
-}
+    background-blend-mode: multiply;*/
+    background-image: linear-gradient(#c9bbbb,#111111);}
+    
+
 #imagem2{ 
     /*background-image: url(./imagens-nadia/HIGIENIZACAO_EXTERNA.jpg);*/
     background-image: linear-gradient(#c9bbbb,#111111);
 }
 
 
-#imagem3{background-image: url(./imagens-nadia/LIPEZA_TECNICA.jpg);
+#imagem3{/*background-image: url(./imagens-nadia/LIPEZA_TECNICA.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #0801016e;
-    background-blend-mode: multiply;}
+    background-blend-mode: multiply;}*/
+    background-image: linear-gradient(#c9bbbb,#111111);}
 #imagem4{
     /*background-image: url(./imagens-nadia/REVITALIZACAO_FAROIS.jpg);*/
     background-image: linear-gradient(#c9bbbb,#111111);
 }
-#imagem5{background-image: url(./imagens-nadia/POLIMENTO.jpg);
+#imagem5{/*background-image: url(./imagens-nadia/POLIMENTO.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #0801016e;
-    background-blend-mode: multiply;}
+    background-blend-mode: multiply;}*/
+    background-image: linear-gradient(#c9bbbb,#111111);}
 #imagem6{
     /*background-image: url(./imagens-nadia/IPERMEABILIZACAO_VIDRO.jpg);*/
     background-image: linear-gradient(#c9bbbb,#111111);}
 #modal-servicos{
    
     box-sizing: unset;
-    width: 25%;
+    width: 30%;
     background-image: url(./imagens-nadia/HIGIENIZACAO_INTERNA.jpg);
     background-repeat: no-repeat;
     background-size: cover;

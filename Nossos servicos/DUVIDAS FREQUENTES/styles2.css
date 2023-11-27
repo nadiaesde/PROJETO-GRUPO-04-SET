@@ -1,4 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
 .titulo{
     text-align: center;
     color: rgb(2, 54, 36);
@@ -9,7 +14,7 @@ details {
     max-width: 960px; /*Largura da caixa*/
     width: 100%; /*largura da caixa*/
     margin: 10px auto;
-    background-color: #efefef;
+    background-color: #0a0909;
     padding: 10px;
   }
   
@@ -26,7 +31,7 @@ details {
   
   summary:after {
     content: "+";
-    color: #111;
+    color: #f9f8f8;
     float: left;
     font-size: 1.5em;
     font-weight: bold;
@@ -43,5 +48,31 @@ details {
   
   #linha[open] summary:after {
     content: "-";
-    color: #ffffff;
+    color: #f3f0f0;
   }
+  body{
+    width: 100vw;
+    height: 100vh;
+    /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #f9f6f6;
+    background-color: #ebe1e1;
+}
+.cabecalho{
+  display: flexbox;
+  justify-content: space-around;
+  align-items: center;
+  font-size: xxx-large;
+  gap: 20%;
+  font-style: normal;
+  position: absolute;
+  width: 100%;
+}
+.imagem_banner{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: inline-block;
+  z-index: 1;
+}
