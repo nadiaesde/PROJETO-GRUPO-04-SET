@@ -5,25 +5,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./nossos_servicos_rodape.css">
+    <link rel="stylesheet" type="text/css" href="/Nossos servicos/nossos_servicos_rodape.css">
+    <link rel="stylesheet" type="text/css" href="/Trabalhe_conosco/Trabalhe_conosco.css">
     <link rel="stylesheet" type="text/css" href="/Trabalhe_conosco/Trabalhe_conosco.css">
        <script src="./javascript.js" defer></script>
+       <script type="text/javascript" defer src="/Nossos servicos/java_script/meu_javascript.js">
+
+       </script> 
 
     <title>EcoClean</title>
 </head>
 <body>
     <header class="cabecalho">
         <h1>EcoClean</h1>
-        <nav class="nav">
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="/Pagina_home2/index.html">PÁGINA INICIAL</a>
+                </li>
+
+                <li>
+                    <a href="/Sobre_nos/Sobre.html">SOBRE NÓS</a>
+                </li>
+
+                <li>
+                    <a href="#">NOSSOS SERVIÇOS</a>
+                </li>
+                <li> <a href="javascript:void(0);" id="mostrarFormularioContato_c" onclick="alternarFormularioContato()">
+                    <span id="menu-texto">CONTATO</span>
+                    </a>    
+                </li>    
+                <li>
+                    <a href="javascript:void(0);" id="mostrarFormularioColaborador" onclick="alternarFormularioColaborador()">
+                        <span id="menu-texto-colaborador">TRABALHE CONOSCO</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/Agendamento/Login.html">AGENDE AQUI</a>
+                </li>
+                <li>
+                    <a href="/Nossos servicos/DUVIDAS FREQUENTES/duvidas2.html">PERGUNTAS FREQUENTES</a>
+                </li>
+
+            </ul>
+            <div id="formulario-contato_c" style="display:none;  border-radius: 10px;">
+                <h2 class="contato">CONTATO</h2>
+                <form action="mailto:jctinelli@hotmail.com" method="post" enctype="text/plain">
+                    <div class="contato-container">
+                        <div class="contato-texto">
+                            <p>
+                                <b>Horário:</b> <br>
+                                De segunda-feira á sábado das 10:00 ás 21:00h.
+                            </p>
+                            <p>
+                                <b>Telefones:</b> <br>
+                                <b>Loja</b> - Shopping Vitória ES <br> (27) 99925-1093 <br />
+                                <b>Loja 03</b> - Aeroporto de Vitória <br /> (27) 99925-1093
+                            </p>
+                            <p>
+                                <b>E-mail:</b> <br>
+                                jctinelli@hotmail.com
+                            </p>
+                        </div>
+                    
+                    <div class="linha_l">
+                        <div class="coluna_c">
+                            <label for="nome_contato">Nome:</label>
+                            <input type="text" id="nome_contato" name="nome_contato" required>
+                        </div>
+                    <div class="linha_l">    
+                        <div class="coluna_c">
+                            <label for="assunto">Assunto:</label>
+                            <input type="text" id="assunto" name="assunto" required>
+                        </div>
+                    </div>
+                    <!-- <div class="linha_l"> -->
+                        <div class="coluna_c">
+                            <label for="email_contato">Email:</label>
+                            <input type="email" id="email_contato" name="email_contato" required>
+                        </div>
+                        <div class="coluna_c">
+                            <label for="telefone_contato">Telefone:</label>
+                            <input type="tel" id="telefone_contato" name="telefone_contato" required>
+                        </div>
+                    <!-- </div> -->
+                    <div class="linha_l">
+                        <div class="coluna_c">
+                            <label for="mensagem">Mensagem:</label>
+                        </div>
+                    </div>
+                    <div class="linha_l">
+                        <div class="coluna_c">
+                            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                        </div>
+                    </div>
+                    <div class="linha_l">
+                        <div class="coluna_c">
+                            <input type="submit" value="Enviar">
+                        </div>    
+                    </div>
+        
+                    <div id="mensagem-enviada" style="display: none">
+                        <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
+                    </div>
+                    </div>
+                </form>
+                </div>
+
+                
+            
+            
+    </header>
+        <!--<nav class="nav">
                 <a href="/Pagina_home2/index.html">PÁGINA INICIAL <span class="menu"></span></a>
                 <a href="/Sobre_nos/Sobre.html">SOBRE NÓS<span class="menu"></span></a>
                 <a href="/Nossos servicos/nossos_servicos.html">NOSSOS SERVIÇOS<span class="menu"></span></a>
                 <a href="#formulario-contato">CONTATO<span class="menu"></span></a>
                 <a href="javascript:void(0);" id="mostrarFormularioColaborador">TRABALHE CONOSCO<span class="menu"></span></a>
                 <a href="/Agendamento/Login.html">AGENDE AQUI</a>
-                
+                <a href="javascript:void(0);" id="mostrarFormularioContato_c" onclick="alternarFormularioContato()">
+                    <span id="menu-texto">CONTATO</span>
+                    </a>                
                 <a href="/Nossos servicos/DUVIDAS FREQUENTES/duvidas2.html">PERGUNTAS FREQUENTES</a>
                 
-        </nav>
+        </nav>-->
         
         <h1 id = "titulo"> Lavagem Ecológica, Higienização e <br> Estética Automotiva</h1>
        

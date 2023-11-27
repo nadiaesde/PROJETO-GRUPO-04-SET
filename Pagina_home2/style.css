@@ -7,7 +7,7 @@
 body {
     background-color: rgb(255, 255, 255);
     width: 100vw;
-        /* height: 100vh; */
+         height: 100vh; 
         /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
         /*font-family: 'Roboto', sans-serif;*/
         font-family: 'Lora', serif;
@@ -26,8 +26,8 @@ body {
     font-style: normal;
     position: absolute;
     width: 100%;
-    flex-wrap: wrap;
-    font-family: unset;
+    /*flex-wrap: wrap;
+    font-family: unset;*/
     
 
 }
@@ -38,7 +38,7 @@ body {
 }
 .cabecalho h1 {
     color: white;
-    text-shadow: 1px 1px 20px black;
+    text-shadow: 1px 1px 20px rgb(13, 232, 13);
     /*color: rgb(255, 255, 255);
     text-shadow: 1px 1px 10px black;
     display: flex;
@@ -50,7 +50,8 @@ body {
     position: absolute;
     top: 200px;
     left: 20%;
-    font-size: 25px;
+    font-size: 35px;
+    color: #ebe1e1;
 }
 
 .imagem_banner{
@@ -72,16 +73,22 @@ body {
     display: flex;
     flex-direction: column;
 }
- .menu{
-        background-color: #f1f1f1;
+ /*.menu{
+    height: 1px;
+    width: 50%;
+    transition: 1s;*/
+        /*background-color: #f1f1f1;
         height: 1px;
         width: 0%;
         transition: 1s;
-        left: 50%;
-}
-.nav a:hover .menu{
+        left: 50%;*/
+
+/*.nav a:hover .menu{
         width: 100%; 
-}
+}*/
+
+.menu ul{
+    display:flex;}
 .header {
     background-color: black;
     color: white;
@@ -280,6 +287,56 @@ margin: 0px 2px 0;
         width: 85%;
     }
 }
+.menu {
+    top: 2%;
+/*    top: 5px; /* Ajuste conforme necessário */
+    right: 500px; /* Ajuste conforme necessário */
+    font-size: 20px; /* Tamanho da fonte desejado */
+    padding: 0px;
+    margin-bottom: 10px; /*  10px  Espaço entre os itens do menu suspenso */    
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+.menu li {
+    display: inline; /* Exibe os itens do menu em linha */
+    margin-right: 20px; /* Espaço entre os itens do menu */
+    position: relative; /* Define a posição relativa para posicionar o submenu */ 
+
+}
+
+.menu ul li a {
+    color: #333; /* Cor padrão do texto do link */
+    text-decoration: none; /* Remover sublinhado padrão */
+    transition: 500ms linear;        
+}
+
+.menu ul li a:hover {
+    color: black; /* Cor quando o mouse passa sobre o link */
+    /* background-color: #CCC; */
+}
+
+.submenu {
+    position: absolute;
+    top: 100%; /* Posiciona abaixo do item do menu principal */
+    left: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+    /* Mostra o submenu quando o item do menu principal é hover */
+.menu li:hover .submenu {
+        display: block;
+    }
+    /* Seletor para remover o sublinhado de links no menu */
+header .menu ul li a {
+    text-decoration: none;
+    /* color:grey; */
+    color: rgb(245, 246, 248);
+}
+
 
 
 

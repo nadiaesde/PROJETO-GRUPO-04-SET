@@ -29,7 +29,7 @@
 }
 .cabecalho h1{
     color: white;
-    text-shadow: 1px 1px 20px black;
+    text-shadow: 1px 1px 20px rgb(13, 232, 13);
 }
 
 .imagem_banner{
@@ -45,7 +45,7 @@
 }
 .nav a{
     color: white;
-    text-shadow: 1px 1px 20px black;
+    text-shadow: 1px 1px 20px rgb(13, 232, 13);
     text-decoration: none;
     font-size: 22px;
     display: flex;
@@ -406,7 +406,7 @@ h1 {
 header .menu ul li a {
     text-decoration: none;
     /* color:grey; */
-    color: aliceblue;
+    color: rgb(245, 246, 248);
 }
 
 
