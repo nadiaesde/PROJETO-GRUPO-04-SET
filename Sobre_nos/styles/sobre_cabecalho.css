@@ -19,8 +19,9 @@ h1 {
 }
 
 .menu {
-    position: absolute;
-    top: -10px; /* Ajuste conforme necessário */
+   position: absolute;
+    top: 2%;
+/*    top: 5px; /* Ajuste conforme necessário */
     right: 500px; /* Ajuste conforme necessário */
     font-size: 20px; /* Tamanho da fonte desejado */
     padding: 0px;
@@ -46,6 +47,7 @@ h1 {
 
 .menu ul li a:hover {
     color: black; /* Cor quando o mouse passa sobre o link */
+    /* background-color: #CCC; */
 }
 
 .submenu {
@@ -63,5 +65,6 @@ h1 {
     /* Seletor para remover o sublinhado de links no menu */
 header .menu ul li a {
     text-decoration: none;
-    color: white;
+    /* color:grey; */
+    color: aliceblue;
 }

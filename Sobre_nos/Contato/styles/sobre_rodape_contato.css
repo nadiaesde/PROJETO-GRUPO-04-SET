@@ -1,15 +1,12 @@
 #formulario-contato_c {
-    background-color: #f0f0f0;
-    padding: 10px;    /* padding: 10px; */
-    width: 98,5%;    /* width: 98%; */
-    position:relative;    /* position: absolute; */
-    overflow: hidden;
-    bottom: 0;
-    margin: 0; auto;
-    top: 0px;
-    align-items: center;
-    /* height: auto; */
-
+    background-color: #f8f4f4; /* Cor de fundo do retângulo */
+    padding: 20px; /* Espaçamento interno */
+    width: 70%; /* 70 Largura do retângulo, ajuste conforme necessário */
+    margin: 0 auto; /* Centralize o retângulo na página */
+    overflow: hidden; /* Limpe os floats */
+    position: relative; /*  incluido depois */
+    top: 230px; /* posição do topo para baixo incluido depois */
+    align-self: center;
 }
 
 .h2,
@@ -19,19 +16,18 @@
     font-size: 20px;
 }
 
-div .linha {
+div .linha_l {
     margin-bottom: 0px; /* Espaçamento inferior entre linhas  no outro esta 50px*/
 }
-
+.coluna_c {
 /* Estilize as colunas do formulário */
-.coluna {
-    width: 48%; /* 48% de largura para ocupar metade do retângulo */
+    width: 100%; /* 48% de largura para ocupar metade do retângulo */
     margin-right: 10%; /* Espaço entre as colunas */
-    display: flexbox; /*  display: inline-block; */
+    display: flexbox; /*display: inline-block;  */
     float: left;
 }
 /* Limpe o float após as colunas */
-.coluna:last-child {
+.coluna_c:last-child {
     margin-right: 0; /* Remova o espaçamento direito da última coluna */
 }
 /* Estilize o botão de envio */
@@ -53,14 +49,13 @@ input[type="email"],
 input[type="tel"],
 textarea {
     font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
-    width: 100%; /* Ocupa 100% da largura do contêiner */
-    /* padding: 10px; */
+    width: 50%; /* Ocupa 100% da largura do contêiner */
+    padding: 10px;
     border-radius: 5px;
     height: 5px;
 }
 
-
-.linha::after {
+.linha_l::after {
     content: "";
     display: table;
     clear: both;
@@ -85,4 +80,9 @@ textarea {
 #mensagem {
     padding: 0.5% 4.5%;
     height: 50px;
+} 
+
+.cor-expressiva {
+    color: red; /* Altere para a cor desejada */
+    font-weight: bold; /* Você pode adicionar outros estilos, como negrito, se desejar */
 }

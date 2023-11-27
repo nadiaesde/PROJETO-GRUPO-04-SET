@@ -3,9 +3,13 @@
 <head>
     <link rel="stylesheet" type="text/css" href="./styles/sobre_imagem_cabecalho.css">
     <link rel="stylesheet" type="text/css" href="./styles/sobre_cabecalho.css">
-    <link rel="stylesheet" type="text/css" href="./styles/sobre_rodape_contato.css">
+    <link rel="stylesheet" type="text/css" href="./Contato/styles/sobre_rodape_contato.css">
     <link rel="stylesheet" type="text/css" href="/Trabalhe_conosco/Trabalhe_conosco.css">    
-    <link rel="stylesheet" type="text/css" href="./styles/sobre_redes_sociais.css">    
+    <link rel="stylesheet" type="text/css" href="./styles/sobre_redes_sociais.css">   
+    
+    <link rel="stylesheet" href="./styles/style.css">
+
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós</title>
@@ -14,23 +18,17 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="./imagens/Sobre_EcoClean.jpg" alt="Eco Clean" style="width: 100%; height:400px;" /> <!-- style="width: 200%; height:300px;" /> -->
-                <!--width: 100%;
-    height: 500px;
-    object-fit: cover;-->
+                <img src="/Sobre_nos/imagens/Sobre_EcoClean.jpg" alt="Eco Clean" style="width: 100%; height:400px;">
             </div>
         </div>
 
-            <div class="logo1">
-                <img src="./imagens/1.png" alt="Eco Clean 1" style="width: 10%; height: 90px;"/>                <!-- <img src="./imagens/1.png" alt="Eco Clean 1" style="width: 2%; height: 90px;"/> -->
-            </div>
-
+        <div class="logo1">
+            <h6 id="ecoCleanTitle" style="text-align: left">EcoClean</h6>
+        </div>
+                
             <div id="whatsapp-icon">
                 <a href="https://api.whatsapp.com/send?phone=5527999251093" target="_blank">
                     <img src="/Sobre_nos/imagens/whatsapp.png" alt="WhatsApp">
-                    
-                    <!-- <img src="/Sobre_nos/imagens/whatsapp.png" alt="WhatsApp"> -->
-
                 </a>
             </div>
             <div id="facebook">
@@ -40,13 +38,13 @@
             </div>
             <div id="instagram">
                 <a href="https://www.instagram.com/jacimartinelli/" target="_blank">
-                <img src="/Sobre_nos/imagens/instagram.png">
+                <img src="/Sobre_nos/imagens/instagram.png" alt="imagem de acesso ao instagram">
                 </a>
             </div>
             <div class="menu">
                 <ul>
                     <li>
-                        <a href="/Pagina_home2/index.html">Página Inicial</a>
+                        <a href="/Pagina_home2/index.html">PÁGINA INICIAL</a>
                     </li>
 
                     <li>
@@ -56,22 +54,94 @@
                     <li>
                         <a href="/Nossos servicos/nossos_servicos.html">NOSSOS SERVIÇOS</a>
                     </li>
-
+                    <li> <a href="javascript:void(0);" id="mostrarFormularioContato_c" onclick="alternarFormularioContato()">
+                        <span id="menu-texto">CONTATO</span>
+                        </a>    
+                    </li>    
                     <li>
-                        <a href="#contato_form">CONTATO</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" id="mostrarFormularioColaborador">TRABALHE CONOSCO</a>
+                        <a href="javascript:void(0);" id="mostrarFormularioColaborador" onclick="alternarFormularioColaborador()">
+                            <span id="menu-texto-colaborador">TRABALHE CONOSCO</span>
+                        </a>
                     </li>
 
                     <li>
                         <a href="/Agendamento/Login.html">AGENDE AQUI</a>
                     </li>
+                    <li>
+                        <a href="/Nossos servicos/DUVIDAS FREQUENTES/duvidas2.html">PERGUNTAS FREQUENTES</a>
+                    </li>
 
                 </ul>                    
-                    <!-- ******************************************************************************************************************************************** -->
-                    <div id="formulario-colaborador" style="display: none;">
-                        <h2>Trabalhe Conosco</h2>
+
+<!-- ***************************************************************************************************************************** -->
+    <div id="formulario-contato_c" style="display:none;  border-radius: 10px;">
+        <h2 class="contato">CONTATO</h2>
+        <form action="mailto:jctinelli@hotmail.com" method="post" enctype="text/plain">
+            <div class="contato-container">
+                <div class="contato-texto">
+                    <p>
+                        <b>Horário:</b> <br>
+                        De segunda-feira á sábado das 10:00 ás 21:00h.
+                    </p>
+                    <p>
+                        <b>Telefones:</b> <br>
+                        <b>Loja</b> - Shopping Vitória ES <br> (27) 99925-1093 <br />
+                        <b>Loja 03</b> - Aeroporto de Vitória <br /> (27) 99925-1093
+                    </p>
+                    <p>
+                        <b>E-mail:</b> <br>
+                        jctinelli@hotmail.com
+                    </p>
+                </div>
+            
+            <div class="linha_l">
+                <div class="coluna_c">
+                    <label for="nome_contato">Nome:</label>
+                    <input type="text" id="nome_contato" name="nome_contato" required>
+                </div>
+            <div class="linha_l">    
+                <div class="coluna_c">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+            </div>
+            <!-- <div class="linha_l"> -->
+                <div class="coluna_c">
+                    <label for="email_contato">Email:</label>
+                    <input type="email" id="email_contato" name="email_contato" required>
+                </div>
+                <div class="coluna_c">
+                    <label for="telefone_contato">Telefone:</label>
+                    <input type="tel" id="telefone_contato" name="telefone_contato" required>
+                </div>
+            <!-- </div> -->
+            <div class="linha_l">
+                <div class="coluna_c">
+                    <label for="mensagem">Mensagem:</label>
+                </div>
+            </div>
+            <div class="linha_l">
+                <div class="coluna_c">
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+            </div>
+            <div class="linha_l">
+                <div class="coluna_c">
+                    <input type="submit" value="Enviar">
+                </div>    
+            </div>
+
+            <div id="mensagem-enviada" style="display: none">
+                <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
+            </div>
+            </div>
+        </form>
+        </div>
+    </div>
+            
+<!-- ************************************************************************************************************************************** -->
+                    <div id="formulario-colaborador" style="display: none; border-radius: 10px;">
+                        <h2 id="colaborador">TRABALHE CONOSCO</h2>
                         <form action='mailto:' + email method="post" enctype="text/plain"> <!-- <form action="processar_formulario.php" method="post"> -->
                             <div class="linha">
                                 <div class="coluna">
@@ -81,8 +151,8 @@
                             </div>
                             <div class="linha">
                                 <div class="coluna">
-                                    <label for="email">Email:</label>
-                                    <input type="email" id="email" name="email" required>
+                                    <label for="email_colaborador">Email:</label>
+                                    <input type="email" id="email_colaborador" name="email_colaborador" required>
                                 </div>
                                 <div class="coluna">
                                     <label for="telefone">Telefone:</label>
@@ -93,7 +163,7 @@
                             <input type="file" id="arquivo" name="arquivo" accept=".pdf, .doc, .docx" required><br><br>
                             <input type="submit" value="Enviar">
                 
-                            <div id="mensagem-enviado" style="display: none;">
+                            <div id="mensagem-enviado" style="display: none">
                                 <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
                             </div>
                         </form>
@@ -101,10 +171,10 @@
                     <!-- *************************************************************************************************************************************************** -->
 
             </div>            
-<!--        </div>    Resto do conteúdo da página -->
-    </header>    
+
+    </header>
 <main>
-    <!-- <div class="container">  -->
+
         <div class="logo_sobre">
             <!-- <img src="./" alt="Eco Clean"  class="Sobre_img_cabecalho"> -->
             <h1 class="texto_sobre_img">O Eco Clean Ecológica</h1>
@@ -120,8 +190,8 @@
                 são todos da linha profissional, o que há de melhor no mercado mundial (utilizamos produtos e <br>
                 equipamentos nacionais e importados), para que os serviços executados nos veículos superem as <br>
                 expectativas dos nossos clientes.<br><br>
-                Se você tem interesse em saber onde fica o ECO CLEAN mais próximo de você,
-                <a href="http://carwashecologico.com.br/#unidades"><strong>clique aqui.</strong></a><br><br>
+                <!-- Se você tem interesse em saber onde fica o ECO CLEAN mais próximo de você,
+                <a href="http://carwashecologico.com.br/#unidades"><strong>clique aqui.</strong></a><br><br> -->
                 SOBRE A NOSSA LAVAGEM ECOLÓGICA<br><br>
                 A nossa Ecolavagem, também conhecida como lavagem à seco, biolavagem ou lavagem ecológica <br>
                 é uma técnica de lavagem de veículos que praticamente elimina o uso de água e limpa os carros por <br>
@@ -131,64 +201,53 @@
                 Apenas 200 ml de água, assim que um carro vai ser lavado por nós do ECO CLEAN!!!
             </p>
         </div>
-    <!-- Conteúdo principal da página, como textos, imagens, vídeos, etc. -->
+
 </main>
 
-<footer>
-    <div id="formulario-contato">
-        <a name="contato_form"></a>
-        <h2 class="contato">CONTATO</h2>
-        <div class="contato-container">
-            <div class="contato-texto">
-                <!-- <form action="mailto:jctinelli@hotmail.com" method="post" enctype="text/plain"> -->
-
-                <p>
-                    <b>Horário:</b> <br>
-                    De segunda-feira á sábado das 10:00 ás 21:00h. Aos domingos abre 12h e encerra ás 20:00h.
-                </p>
-                <p>
-                    <b>Telefones:</b> <br>
-                    <b>Loja</b> - Shopping Vitória ES <br> (27) 99925-1093 | (27) 99925-1093 <br />
-                    <b>Loja 03</b> - Aeroporto de Vitória <br /> (27) 99925-1093
-                </p>
-                <p>
-                    <b>E-mail:</b> <br>
-                    jctinelli@hotmail.com
-                </p>
+    <footer class = "footer">
+        <div class = "container">
+            <div class = "sobre-nos">
+                <h2>Integrantes</h2>
+                <h3>Renan Morais Desenvolvedor Frot-End</h3>
+                <img src="#" alt="Foto Renan">
+                <h3>Nadia  Desenvolvedora Frot-End</h3>
+                <img src="/Nossos servicos/imagens-nadia/Nadia_foto.jpg" alt="Foto Nadia" style="width: 15%; height:15%;">
+                <h3>Jacimar Desenvolvedor Frot-End</h3>
+                <img src="./imagens/Jacimar.jpg"  alt="Foto Jacimar" style="width: 15%; height:15%;">
+               
+                </div>
+                <div class = "contato">
+                    <h2>Contato</h2>
+                    <p>remorais70@gmail.com</p>
+                    <p>nadiaesde@gmail.com</p>
+                    <p>jctinelli@hotmail.com</p>
+                    
+                </div>
+                <div class = "fale-conosco">
+                    <h2>Fale Conosco</h2>
+                    <a href="https://api.whatsapp.com/send?phone=5551999787513&text=deixe%20sua%20mensagem" target="_blank">
+                        <img src="/Pagina_home2/img_rodape/whats.jpg" alt="logo whats"></a>
+                        
+                    </a>
+                    <div class = "flex-row">
+                </div>
             </div>
-            <form action="mailto:jctinelli@hotmail.com" method="post" enctype="text/plain">
-                <div class="linha">
-                    <div class="coluna">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
-                    <div class="coluna">
-                        <label for="assunto">Assunto:</label>
-                        <input type="text" id="assunto" name="assunto" required>
-                    </div>
+                <div class="rede-sociais">
+                    <h2>Rede Sociais</h2>
+                    <a href="https://www.facebook.com/EcoCleanPro23" target="_blank">
+                      <img src="/Pagina_home2/img_rodape/face.jpg" alt="logo face" style="width: 10%; height:20%;"></a>
+                    <a href="https://twitter.com/i/flow/login" target="_blank">
+                      <img src="/Pagina_home2/img_rodape/twitter.jpg " alt="logo twitter" style="width: 10%; height:20%;"></a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <img src="/Pagina_home2/img_rodape/insta.jpg" alt="logo insta" style="width: 10%; height:20%;"></a>
+                    
                 </div>
-                <div class="linha">
-                    <div class="coluna">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="coluna">
-                        <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" required>
-                    </div>
-                </div>
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-                <input type="submit" value="Enviar">
-
-                <div id="mensagem-enviada" style="display: none;">
-                    <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
-                </div>
-            </form>
-        </div>
-    </div>
-    <!--    </div>  Resto do conteúdo da página -->
-</footer>
-    <SCript type="text/javascript" src="/Trabalhe_conosco/meu_javascript.js"></SCript>
+            </div>
+        </div>   
+        <div class ="texto-copy">
+            copyright @ 2023
+        </div> 
+    </footer>
+    <script type="text/javascript" src="./Contato/javascript/meu_javascript.js" defer> </script>
 </body>
 </html>

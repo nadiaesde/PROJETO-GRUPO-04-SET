@@ -8,6 +8,7 @@ mostrarFormularioContato.addEventListener("click", function () { //controladorMo
     // Verifica o estado atual do formulário e alterna entre mostrar e ocultar
     if (formularioContato.style.display === "none" || formularioContato.style.display === "") {
         formularioContato.style.display = "block";
+        formularioContato.style.zIndex = "999";
     } else {
         formularioContato.style.display = "none";
     }

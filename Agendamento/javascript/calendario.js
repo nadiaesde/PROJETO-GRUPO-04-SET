@@ -23,19 +23,31 @@ let month = today.getMonth();
 let year = today.getFullYear();
 
 const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
+  "Janeiro",
+  "Feverreiro",
+  "Março",
+  "Abril",
+  "Maio",
+  "Junho",
+  "Julho",
+  "Augosto",
+  "Setembro",
+  "Outubro",
+  "Novembro",
+  "Dezembro",
 ];
+
+//******************************************************************************************
+const daysOfWeek = [
+  "Domingo",
+  "Segunda-feira",
+  "Terça-feira",
+  "Quarta-feira",
+  "Quinta-feira",
+  "Sexta-feira",
+  "Sábado",
+];
+// ************************************************************************************************
 
 // const eventsArr = [
 //   {
@@ -229,13 +241,30 @@ function gotoDate() {
   alert("Invalid Date");
 }
 
+
+// ********************** FUNÇÃO FUNCIONANDO *****************************************
 //function get active day day name and date and update eventday eventdate
+//function getActiveDay(date) {
+//  const day = new Date(year, month, date);
+//  const dayName = day.toString().split(" ")[0];
+//  eventDay.innerHTML = dayName;
+//  eventDate.innerHTML = date + " " + months[month] + " " + year;
+//}
+
+// *********************************************************************************************************
+
+// ***************************INCLUIDA A FUNÇÃO ******************************************************************************
 function getActiveDay(date) {
   const day = new Date(year, month, date);
-  const dayName = day.toString().split(" ")[0];
+  const dayName = daysOfWeek[day.getDay()]; // Obtenha o nome do dia da semana em português
   eventDay.innerHTML = dayName;
   eventDate.innerHTML = date + " " + months[month] + " " + year;
 }
+
+
+
+
+// *********************************************************************************************************
 
 //function update events when a day is active
 function updateEvents(date) {

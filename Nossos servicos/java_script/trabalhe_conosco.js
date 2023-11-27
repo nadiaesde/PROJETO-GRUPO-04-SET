@@ -1,17 +1,20 @@
-// Obtém os elementos do DOM
-const formularioContato = document.getElementById("formulario-modal");
-const mostrarFormularioContato = document.getElementById("mostrarFormularioColaborador");
+
+const formularioColaborador = document.querySelector(".formulario-modal");
+const mostrarformularioColaborador = document.getElementById("mostrarFormularioColaborador");
+
 const botaoCancelar = document.querySelector(".btn-cancelar")
 // Adiciona um evento de clique ao link "Contato"
 function controladorModal() {
-    // Verifica o estado atual do formulário e alterna entre mostrar e ocultar
-    if (formularioContato.style.display === "none" || formularioContato.style.display === "") {
-        formularioContato.style.display = "block";
+        // Verifica o estado atual do formulário e alterna entre mostrar e ocultar
+    if (formularioColaborador.style.display === "none" || formularioColaborador.style.display === "") {
+        formularioColaborador.style.display = "block";
+        formularioColaborador.style.zIndex = "999";
+
     } else {
-        formularioContato.style.display = "none";
+        formularioColaborador.style.display = "none";
     }
-}
-mostrarFormularioContato.addEventListener("click", controladorModal );
+};
+mostrarformularioColaborador.addEventListener("click", controladorModal );
 botaoCancelar.addEventListener("click", controladorModal) 
 
 function modalServicos(){
@@ -36,4 +39,5 @@ function modalServicos(){
     }
 }
 modalServicos()
+
 

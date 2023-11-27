@@ -1,5 +1,16 @@
 const marcaSelect = document.getElementById("veiculo_marca");
 const modeloSelect = document.getElementById("veiculo_modelo");
+const cpfCnpjInput = document.getElementById("CPF_CNPJ_input");
+const emailInput = document.getElementById("email");
+const btnSubmit = document.querySelector('button[type=submit]');
+
+var nome_usuario = document.getElementById("nome_usuario").value;
+var senha = document.getElementById("senha").value;
+// 
+var messageContainer = document.getElementById("message-container");
+// 
+
+
 
 // Dados de modelos por marca
 const modelosPorMarca = {
@@ -29,28 +40,142 @@ marcaSelect.addEventListener("change", preencherModelos);
 
 // Preencha os modelos na inicialização
 preencherModelos();
+// **************************************************************************************
+// Função para validar CPF ou CNPJ
+function isValidCpfCnpj(cpfCnpj) {
+    cpfCnpj = cpfCnpj.replace(/[^\d]+/g,''); // Remove todos os caracteres não numéricos
+  
+    if (cpfCnpj.length === 11) {
+      // Validação de CPF
+      if (cpfCnpj === '00000000000' || cpfCnpj === '11111111111' || cpfCnpj === '22222222222' || cpfCnpj === '33333333333' || cpfCnpj === '44444444444' || cpfCnpj === '55555555555' || cpfCnpj === '66666666666' || cpfCnpj === '77777777777' || cpfCnpj === '88888888888' || cpfCnpj === '99999999999') {
+        return false; // CPFs com dígitos iguais são inválidos
+      }
+  
+      let soma = 0;
+      let resto;
+  
+      for (let i = 1; i <= 9; i++) {
+        soma += parseInt(cpfCnpj.substring(i-1, i)) * (11 - i);
+      }
+  
+      resto = (soma * 10) % 11;
+  
+      if ((resto === 10) || (resto === 11)) {
+        resto = 0;
+      }
+  
+      if (resto !== parseInt(cpfCnpj.substring(9, 10))) {
+        return false;
+      }
+  
+      soma = 0;
+      for (let i = 1; i <= 10; i++) {
+        soma += parseInt(cpfCnpj.substring(i-1, i)) * (12 - i);
+      }
+  
+      resto = (soma * 10) % 11;
+  
+      if ((resto === 10) || (resto === 11)) {
+        resto = 0;
+      }
+  
+      if (resto !== parseInt(cpfCnpj.substring(10, 11))) {
+        return false;
+      }
+  
+      return true;
+    } else if (cpfCnpj.length === 14) {
+      // Validação de CNPJ
+      let tamanho = cpfCnpj.length - 2
+      let numeros = cpfCnpj.substring(0,tamanho);
+      const digitos = cpfCnpj.substring(tamanho);
+      let soma = 0;
+      let pos = tamanho - 7;
+      for (let i = tamanho; i >= 1; i--) {
+        soma += numeros.charAt(tamanho - i) * pos--;
+        if (pos < 2) {
+          pos = 9;
+        }
+      }
+      let resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+      if (resultado != digitos.charAt(0)) {
+        return false;
+      }
+      
+      tamanho = tamanho + 1;
+      numeros = cpfCnpj.substring(0,tamanho);
+      soma = 0;
+      pos = tamanho - 7;
+      for (let i = tamanho; i >= 1; i--) {
+        soma += numeros.charAt(tamanho - i) * pos--;
+        if (pos < 2) {
+          pos = 9;
+        }
+      }
+      resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+      if (resultado != digitos.charAt(1)) {
+        return false;
+      }
+      
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
+//   return cpfCnpj.trim() !== "";
+// }
+// *******************************************************************************
+// Função para validar e-mail
+function isValidEmail(email) {
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return emailPattern.test(email);
+}
 
-// ****************************************************** validar email
+btnSubmit.addEventListener("click", (e) => {
+  e.preventDefault(); // Impede o envio normal do formulário
 
-  const emailInput = document.getElementById("email");
-  emailInput.addEventListener("blur", function() {
-    const email = emailInput.value;
+  // Valide o campo de veículos
+  const marca = marcaSelect.value;
+  const modelo = modeloSelect.value;
 
+  if (marca === "" || modelo === "") {
+
+    messageContainer.innerHTML = "Selecione uma marca e modelo de veículo.";
+//    alert("Selecione uma marca e modelo de veículo.");
+    return; // Impede o envio do formulário se os campos de veículos não estiverem preenchidos
+  }
+  // Valide o campo de e-mail
+
+  const email = emailInput.value;
 
   if (!isValidEmail(email)) {
-    emailInput.textContent = "CPF ou CNPJ inválido!";
-    emailInput.style.color = "red";
-    emailInput.focus();         
-    }
-  });
-
-  function isValidEmail(email) {
-    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return emailPattern.test(email);
+    messageContainer.innerHTML = "E-mail inválido. Preencha corretamente.";
+//    alert("E-mail inválido. Preencha corretamente.");
+    return; // Impede o envio do formulário se o e-mail for inválido
+  }
+  // Valide o campo CPF/CNPJ
+  const cpfCnpj = cpfCnpjInput.value;
+  if (!isValidCpfCnpj(cpfCnpj)) {
+    messageContainer.innerHTML = "CPF ou CNPJ inválido. Preencha corretamente.";
+    //    alert("CPF ou CNPJ inválido. Preencha corretamente.");
+    isValidCpfCnpj.focus();     
+    return; // Impede o envio do formulário se o CPF/CNPJ for inválido
   }
 
-  document.getElementById("meuForm").onsubmit = function() {
-  // Redirecionar para a página de destino
-  window.location.href = './calendario.html';  
-  return false; // Isso impede o envio normal do formulário
-};
+//  messageContainer.innerHTML = "Nome de Usuário: " + nome_usuario + "<br>Senha: " + senha;
+//  document.body.appendChild(messageContainer);
+  
+  function exibirDados() {
+    var nome_usuario = document.getElementById("nome_usuario").value;
+    var senha = document.getElementById("senha").value;
+
+    var messageContainer = document.getElementById("message-container");
+    messageContainer.innerHTML = "Nome de Usuário: " + nome_usuario + "<br>Senha: " + senha;
+}
+  // Exibe os valores no console (substitua pelo que preferir)
+           setTimeout(function () {
+            window.location.href = "./login.html";
+          }, 5000); // Aguarda 5 segundos (ajuste conforme necessário)
+
+});
