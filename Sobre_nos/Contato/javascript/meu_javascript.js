@@ -64,3 +64,16 @@ function alternarFormularioColaborador() {
     });
 
 }
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.querySelector('form');
+        const mensagemEnviada = document.getElementById('mensagem-enviada');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Você pode adicionar aqui a lógica para enviar o formulário usando AJAX
+            // e exibir a mensagem de sucesso depois de uma resposta bem-sucedida.
+            
+            // Exemplo básico de exibição da mensagem de sucesso
+            mensagemEnviada.style.display = 'block';
+        });
+    });

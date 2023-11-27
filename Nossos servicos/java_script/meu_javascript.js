@@ -41,8 +41,8 @@ function alternarFormularioColaborador() {
         // Se o formulário estiver oculto, mostra o formulário e altera o texto do menu
         formularioColaborador.style.display = "block";
         formularioColaborador.style.zIndex = "999";        
-        menuTextoColaborador.textContent = "FECHE AQUI";
-        menuTextoColaborador.classList.add("cor-expressiva");
+//        menuTextoColaborador.textContent = "FECHE AQUI";
+//        menuTextoColaborador.classList.add("cor-expressiva");
     } else {
         // Se o formulário estiver visível, esconde o formulário e volta o texto do menu
         formularioColaborador.style.display = "none";
