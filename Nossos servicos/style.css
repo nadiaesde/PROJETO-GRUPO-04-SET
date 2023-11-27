@@ -306,6 +306,10 @@
     transform: translateY(-9px);
 }
 
+.texto-copy{
+    color:aquamarine;
+    text-align: center;
+}
     
 @media(max-width: 1315px) {
     .sub-titulo{
