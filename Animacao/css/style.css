@@ -1,0 +1,68 @@
+ body {
+  margin: 0; 
+  overflow: hidden; /*Evita barras de rolagem */
+ }
+
+ .car-container {
+  position: absolute;
+  top: 50%;
+  left: -100px; /*Começa fora da tela */
+  transition: left 2s ease-out; /*Adiciona uma transição suave */
+} 
+ .car {
+  width: 150px;
+  height: 100px;
+  background-color: green;
+  border-radius: 10px; /* Raio para arredondar as quinas */  
+  /* Estilo adicional para representar um carro em movimento */
+ }
+/* Adicionei um estilo para o contador de voltas */
+.lap-counter {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+.wheel {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black; /* Cor das rodas */
+  border-radius: 50%;
+}
+
+.front-wheel {
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.back-wheel {
+  top: 50%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+
+/* No seu CSS *********************************** */
+.car-wash {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden; /* Começa invisível */
+}
+
+.employee1,
+.employee2 {
+  /* Adicione estilos conforme necessário */
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  position: absolute;
+  /* Posição inicial fora da tela ou escondida */
+  left: -100px;
+}
+
+/* Adicione estilos para os itens de limpeza, se necessário */
