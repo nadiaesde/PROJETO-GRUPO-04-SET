@@ -1,4 +1,27 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const formularioColaborador = document.querySelector(".formulario-modal");
 const mostrarformularioColaborador = document.querySelectorAll("#mostrarFormularioColaborador");
 
@@ -19,3 +42,4 @@ for (let i = 0; i < mostrarformularioColaborador.length; i++) {
     mostrarformularioColaborador[i].addEventListener("click", controladorModal);
 }
 botaoCancelar.addEventListener("click", controladorModal)
+
