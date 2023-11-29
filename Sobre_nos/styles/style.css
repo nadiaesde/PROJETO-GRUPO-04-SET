@@ -6,7 +6,16 @@ body {
     color: #0b0a0a;
     background-color: #ebe1e1;
 }
+section {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
 
+}
+.titulo_sobre{
+    text-align: center;
+    font-size: 3em;
+}
 .texto-copy {
     color: aquamarine;
     text-align: center;
