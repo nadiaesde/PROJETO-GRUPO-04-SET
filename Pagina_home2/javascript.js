@@ -1,27 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 const formularioColaborador = document.querySelector(".formulario-modal");
 const mostrarformularioColaborador = document.querySelectorAll("#mostrarFormularioColaborador");
 
