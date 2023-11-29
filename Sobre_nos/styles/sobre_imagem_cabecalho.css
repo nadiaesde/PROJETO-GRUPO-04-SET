@@ -56,6 +56,7 @@ body {
 .lavando_carro {
     max-width: 50%; /* Ajuste a largura da imagem ao seu gosto */
     margin-right: 20px; /* Espaço entre a imagem e o texto */
+    box-shadow: rgb(45, 44, 44) 4px 4px 4px 4px;
 }
 
 .texto_sobre_nos {
