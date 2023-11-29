@@ -1,72 +1,30 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-    body{
-        width: 100vw;
-        height: 100vh;
-        /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
-        font-size: 14px;
-        line-height: 1.42857143;
-        color: #f9f6f6;
-        background-color: #ebe1e1;
-    }
-    
 
-.cabecalho{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: xxx-large;
-    gap: 20%;
-    font-style: normal;
-    position: absolute;
-    width: 100%;
 
-}
-.cabecalho h1{
-    color: white;
-    text-shadow: 1px 1px 20px rgb(13, 232, 13);
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #f9f6f6;
+    background-color: #ebe1e1;
 }
 
-.imagem_banner{
+
+
+.imagem_banner {
     width: 100%;
     height: 500px;
     object-fit: cover;
     display: inline-block;
     z-index: 1;
 }
-.nav{
-    display: flex;
-    gap: 10px;
-}
-.nav a{
-    color: white;
-    text-shadow: 1px 1px 20px rgb(13, 232, 13);
-    text-decoration: none;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    }
 
- .menu{
-        
-        height: 1px;
-        width: 50%;
-        transition: 1s;
 
-    }
-    .menu ul{
-        display:flex;
-        
-    }
-.nav a:hover .menu{
-        width: 100%;
-    }
-.Titulo{
+
+.Titulo {
     /*font-family: 'Roboto', sans-serif;*/
     text-transform: uppercase;
     font-weight: bold;
@@ -75,7 +33,8 @@
     color: #333;
     text-align: center;
 }
-.sub-titulo{
+
+.sub-titulo {
     /*font-family: 'Roboto', sans-serif;
     text-transform: uppercase;*/
     font-weight: bold;
@@ -84,22 +43,23 @@
     color: #333;
     text-align: center;
 }
- 
-.servicos_conteiner{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
+
+.servicos_conteiner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
 }
-.titulo_servico{
+
+.titulo_servico {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 30px;
     font-size: 1.5em;
     color: #f1f1f1;
-    
+
 }
 
 .paragrafo {
@@ -114,7 +74,8 @@
     contain: layout;
 
 }
-.lista{
+
+.lista {
     width: 62%;
     height: auto;
     display: flex;
@@ -126,47 +87,68 @@
     padding: 20px 0;
     margin-bottom: 50px;
 }
-.item_lista{
+
+.item_lista {
     width: 47%;
     height: auto;
     border: 2px solid rgb(29, 153, 50);
-    padding: 10px;   
+    padding: 10px;
 }
-#imagem1{/*background-image: url(./imagens-nadia/HIGIENIZACAO_INTERNA.jpg);
+
+#imagem1 {
+    /*background-image: url(./imagens-nadia/HIGIENIZACAO_INTERNA.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #0801016e;
     background-blend-mode: multiply;*/
-    background-image: linear-gradient(#c9bbbb,#111111);}
-    
+    background-image: linear-gradient(#c9bbbb, #111111);
+}
 
-#imagem2{ 
+
+#imagem2 {
     /*background-image: url(./imagens-nadia/HIGIENIZACAO_EXTERNA.jpg);*/
-    background-image: linear-gradient(#c9bbbb,#111111);
+    background-image: linear-gradient(#c9bbbb, #111111);
 }
 
 
-#imagem3{/*background-image: url(./imagens-nadia/LIPEZA_TECNICA.jpg);
+#imagem3 {
+    /*background-image: url(./imagens-nadia/LIPEZA_TECNICA.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #0801016e;
     background-blend-mode: multiply;}*/
-    background-image: linear-gradient(#c9bbbb,#111111);}
-#imagem4{
+    background-image: linear-gradient(#c9bbbb, #111111);
+}
+
+#imagem4 {
     /*background-image: url(./imagens-nadia/REVITALIZACAO_FAROIS.jpg);*/
-    background-image: linear-gradient(#c9bbbb,#111111);
+    background-image: linear-gradient(#c9bbbb, #111111);
 }
-#imagem5{/*background-image: url(./imagens-nadia/POLIMENTO.jpg);
+
+#imagem5 {
+    /*background-image: url(./imagens-nadia/POLIMENTO.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #0801016e;
     background-blend-mode: multiply;}*/
-    background-image: linear-gradient(#c9bbbb,#111111);}
-#imagem6{
+    background-image: linear-gradient(#c9bbbb, #111111);
+}
+
+#imagem6 {
     /*background-image: url(./imagens-nadia/IPERMEABILIZACAO_VIDRO.jpg);*/
-    background-image: linear-gradient(#c9bbbb,#111111);}
-#modal-servicos{
-   
+    background-image: linear-gradient(#c9bbbb, #111111);
+}
+
+.imagem_0 {
+    background-image: url(./imagens-nadia/POLIMENTO.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0801016e;
+    background-blend-mode: multiply;
+}
+
+#modal-servicos {
+
     box-sizing: unset;
     width: 30%;
     background-image: url(./imagens-nadia/HIGIENIZACAO_INTERNA.jpg);
@@ -177,16 +159,17 @@
     padding: 20px;
     margin: auto;
 }
- 
+
 
 
 .contato-texto {
     padding: 10px;
-    max-width: 50%; /*Limite a largura para evitar sobreposição com o formulário */
+    max-width: 50%;
+    /*Limite a largura para evitar sobreposição com o formulário */
     text-align: right;
 }
 
-.formulario-modal{
+.formulario-modal {
     width: 100vw;
     height: 100vh;
     background-color: #3333338d;
@@ -203,7 +186,8 @@
     margin: 0 auto;
     overflow: hidden;
 }
-.btn-cancelar{
+
+.btn-cancelar {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
@@ -214,161 +198,51 @@
 
 }
 
-.btn-cancelar:hover{
-    background-color:rgb(221, 90, 90) ;
+.btn-cancelar:hover {
+    background-color: rgb(221, 90, 90);
 }
 
-.footer.footer{
-    height: 50%;
-    background: #333333;
-    position: relative;
-}
-.fale-conosco{
-    text-decoration: none;
-}
-.contato{
-    margin-left: 45px;
-}
-.footer.footer .container {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-}
-.footer.footer .container > div{
-    flex-grow:1;
-    flex-basis: 0;
-    padding: 3rem 0.9rem;
-}
-.footer h2{
-    color:#fff;
-}
-.footer p{
-    font-size: 15px;
-    color: bisque;
-}
-.footer .sobre-nos{
-    margin-left: 30px;
-}
-.rede-sociais{
-    color: #fff;
-    align-items: center;
-}
-.rede-sociais .fa-facebook-f{
-    height: 0;
-    width: 17px;
-    font-size: 20px;
-    line-height:40px;
-    margin: 0px 2px 0;
-    color:#87ceeb;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.rede-sociais .fa-facebook-f:hover{
-    color:#fff;
-    transform: translateY(-9px);
-}
-
-.rede-sociais .fa-twitter{
-    height: 0;
-    width: 17px;
-    font-size: 20px;
-    line-height:40px;
-    margin: 0px 2px 0;
-    color:#87ceeb;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.rede-sociais .fa-twitter:hover{
-    color:#fff;
-    transform: translateY(-9px);
-}
-
-.rede-sociais .fa-instagram{
-    height: 0;
-    width: 17px;
-    font-size: 20px;
-    line-height:40px;
-    margin: 0px 2px 0;
-    color:#87ceeb;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.rede-sociais .fa-instagram:hover{
-    color:#fff;
-    transform: translateY(-9px);
-}
-
-.rede-sociais .fa-whatsapp{
-    height: 50px;
-    width: 17px;
-    font-size: 20px;
-    line-height:40px;
-    margin: 0px 2px 0;
-    color:#87ceeb;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.rede-sociais .fa-whatsapp:hover{
-    color:#fff;
-    transform: translateY(-9px);
-}
-
-.texto-copy{
-    color:aquamarine;
+.texto-copy {
+    color: aquamarine;
     text-align: center;
 }
-    
+
 @media(max-width: 1315px) {
-    .sub-titulo{
+    .sub-titulo {
         font-size: 2em;
     }
+
     .lista {
         width: 90%;
         overflow-y: scroll;
         height: 600px;
     }
-    .item_lista{
-        min-width: 500px;
-    }
-    .nav{
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-    }
-    .menu{
-      width: 60%;  
-    }
-    .cabecalho{
-        width: 60%;
-        display: flex;
-        align-items: stretch;    
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-content: normal;
-    }
-    .cabecalho h1{
-        width: 50%;
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
 
+    .item_lista {
+        min-width: 260px;
     }
+
+    .nav {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
 }
-@media(max-width: 1849px){
-    .lista{
+
+@media(max-width: 1849px) {
+    .lista {
         width: 85%;
     }
 }
 
-.container {
-    position: relative;
-    margin: 0;
-}        
+
 
 h1 {
-    
-    font-weight: bold; /* Texto em negrito */
- } 
+
+    font-weight: bold;
+    /* Texto em negrito */
+}
 
 .texto_depois,
 .texto_sobre_img {
@@ -377,57 +251,18 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
-    color:aliceblue;
+    color: aliceblue;
 }
 
-.menu {
-    top: 2%;
-/*    top: 5px; /* Ajuste conforme necessário */
-    right: 500px; /* Ajuste conforme necessário */
-    font-size: 20px; /* Tamanho da fonte desejado */
-    padding: 0px;
-    margin-bottom: 10px; /*  10px  Espaço entre os itens do menu suspenso */    
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-}
-.menu li {
-    display: inline; /* Exibe os itens do menu em linha */
-    margin-right: 20px; /* Espaço entre os itens do menu */
-    position: relative; /* Define a posição relativa para posicionar o submenu */ 
-
-}
-
-.menu ul li a {
-    color: #333; /* Cor padrão do texto do link */
-    text-decoration: none; /* Remover sublinhado padrão */
-    transition: 500ms linear;        
-}
-
-.menu ul li a:hover {
-    color: black; /* Cor quando o mouse passa sobre o link */
-    /* background-color: #CCC; */
-}
 
 .submenu {
     position: absolute;
-    top: 100%; /* Posiciona abaixo do item do menu principal */
+    top: 100%;
+    /* Posiciona abaixo do item do menu principal */
     left: 0;
     display: none;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
 }
-    /* Mostra o submenu quando o item do menu principal é hover */
-.menu li:hover .submenu {
-        display: block;
-    }
-    /* Seletor para remover o sublinhado de links no menu */
-header .menu ul li a {
-    text-decoration: none;
-    /* color:grey; */
-    color: rgb(245, 246, 248);
-}
 
-
+/* Mostra o submenu quando o item do menu principal é hover */

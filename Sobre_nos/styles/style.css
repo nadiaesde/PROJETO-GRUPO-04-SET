@@ -1,124 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@700&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     background-color: rgb(255, 255, 255);
     width: 100vw;
-        font-family: 'Lora', serif;
-        font-size: 14px;
-        line-height: 1.42857143;
-        color: #0b0a0a;
-        background-color: #ebe1e1;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #0b0a0a;
+    background-color: #ebe1e1;
 }
 
-
-.footer {
-    background-color:#333333;;
-    color: rgb(255, 255, 255);
+.texto-copy {
+    color: aquamarine;
     text-align: center;
-    padding: 10px;
 }
 
+.formulario-modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: #3333338d;
+    position: fixed;
+    left: 0%;
+    top: 0px;
+    color: #111111;
+}
 
-.footer.footer{
-    height: 100%;
-    background: #333333;
-    position: relative;
+#formulario-colaborador {
+    background-color: #f4efef;
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
 }
-.fale-conosco{
-    text-decoration: none;
-}
-.contato{
-    margin-left: 45px;
-}
-.footer.footer .container {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-}
-.footer.footer .container > div{
-    flex-grow:1;
-    flex-basis: 0;
-    padding: 3rem 0.9rem;
-}
-.footer h2{
-    color:#fff;
-}
-.footer p{
-    font-size: 15px;
-    color: bisque;
-}
-.footer .sobre-nos{
-    margin-left: 30px;
-}
-.rede-sociais{
+
+.btn-cancelar {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(124, 5, 5);
     color: #fff;
-    align-items: center;
-}
-.rede-sociais .fa-facebook-f{
-    height: 0;
-width: 17px;
-font-size: 20px;
-line-height:40px;
-margin: 0px 2px 0;
-    color:#87ceeb;
     cursor: pointer;
-    transition: 0.5s;
-}
-.rede-sociais .fa-facebook-f:hover{
-    color:#fff;
-    transform: translateY(-9px);
+    transition: 300ms;
+
 }
 
-.rede-sociais .fa-twitter{
-    height: 0;
-width: 17px;
-font-size: 20px;
-line-height:40px;
-margin: 0px 2px 0;
-    color:#87ceeb;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.rede-sociais .fa-twitter:hover{
-    color:#fff;
-    transform: translateY(-9px);
-}
-
-.rede-sociais .fa-instagram{
-    height: 0;
-width: 17px;
-font-size: 20px;
-line-height:40px;
-margin: 0px 2px 0;
-    color:#87ceeb;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.rede-sociais .fa-instagram:hover{
-    color:#fff;
-    transform: translateY(-9px);
-}
-
-.rede-sociais .fa-whatsapp{
-    height: 0;
-width: 17px;
-font-size: 20px;
-line-height:40px;
-margin: 0px 2px 0;
-    color:#87ceeb;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.rede-sociais .fa-whatsapp:hover{
-    color:#fff;
-    transform: translateY(-9px);
-}
-.texto-copy{
-    color:aquamarine;
-    text-align: center;
+.btn-cancelar:hover {
+    background-color: rgb(221, 90, 90);
 }

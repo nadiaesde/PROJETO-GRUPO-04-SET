@@ -1,0 +1,164 @@
+.footer {
+    background-color: #333333;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer {
+    height: auto;
+    background: #333333;
+    position: relative;
+    border-radius: 8px 8px 0 0;
+}
+
+.fale-conosco {
+    text-decoration: none;
+}
+
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-content: space-between;
+    align-items: start;
+}
+
+.footer .container>div {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+}
+
+.footer h2 {
+    color: #fff;
+}
+
+.footer p {
+    font-size: 15px;
+    color: bisque;
+}
+
+.footer .sobre-nos {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.sobre-nos-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.sobre-nos img {
+    width: 100px;
+}
+
+.rede-sociais {
+    color: #fff;
+    align-items: center;
+}
+
+.rede-sociais a img {
+    width: 30px;
+    height: 30px;
+}
+
+.rede-sociais .fa-facebook-f {
+    height: 0;
+    width: 17px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0px 2px 0;
+    color: #87ceeb;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rede-sociais .fa-facebook-f:hover {
+    color: #fff;
+    transform: translateY(-9px);
+}
+
+.rede-sociais .fa-twitter {
+    height: 0;
+    width: 17px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0px 2px 0;
+    color: #87ceeb;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.rede-sociais .fa-twitter:hover {
+    color: #fff;
+    transform: translateY(-9px);
+}
+
+.rede-sociais .fa-instagram {
+    height: 0;
+    width: 17px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0px 2px 0;
+    color: #87ceeb;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.rede-sociais .fa-instagram:hover {
+    color: #fff;
+    transform: translateY(-9px);
+}
+
+.rede-sociais .fa-whatsapp {
+    height: 0;
+    width: 17px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0px 2px 0;
+    color: #87ceeb;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.rede-sociais .fa-whatsapp:hover {
+    color: #fff;
+    transform: translateY(-9px);
+}
+
+.rede-sociais-container {
+
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media(max-width:720px) {
+    .footer .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sobre-nos {
+        width: 100%;
+    }
+
+    .sobre-nos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

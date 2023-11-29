@@ -1,41 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="../style/reset.css">
-    <link rel="stylesheet" href="../style/header.css">
-    <link rel="stylesheet" href="../style/footer.css">
-
-    <link rel="stylesheet" type="text/css" href="./styles/sobre_imagem_cabecalho.css">
-    <link rel="stylesheet" type="text/css" href="./styles/sobre_cabecalho.css">
-    <link rel="stylesheet" type="text/css" href="./Contato/styles/sobre_rodape_contato.css">
-    <link rel="stylesheet" type="text/css" href="/Trabalhe_conosco/Trabalhe_conosco.css">
-    <link rel="stylesheet" type="text/css" href="./styles/sobre_redes_sociais.css">
-
-    <link rel="stylesheet" href="./styles/style.css">
-
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/footer.css">
+
+    <link rel="stylesheet" href="/Pagina_home2/style.css">
+    <link rel="stylesheet" href="./Pagina_home2/style.css">
+    <link rel="stylesheet" href="./Pagina_home2/nossos_servicos_rodape.css">
+    <link rel="stylesheet" type="text/css" href="/Nossos servicos/nossos_servicos_rodape.css">
+    <link rel="stylesheet" type="text/css" href="/Trabalhe_conosco/Trabalhe_conosco.css">
+
+    <script src="./Pagina_home2/javascript.js" defer></script>
+    <script type="text/javascript" defer src="./Nossos servicos/java_script/meu_javascript.js"></script>
+
+    <script type="text/javascript" defer src="./scripts/main.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>EcoClean</title>
 </head>
 
 <body>
     <header class="cabecalho">
         <h1>EcoClean</h1>
-        <button class="hamburger"><img class="hamburger_icon" src="../imagens/menu-line.svg" alt=""></button>
+        <button class="hamburger"><img class="hamburger_icon" src="../imagens/menu-line.svg" alt=""> </button>
         <div class="menu_hamburger">
             <ul>
                 <li>
-                    <a href="../index.html">PÁGINA INICIAL</a>
+                    <a href="#">PÁGINA INICIAL</a>
                 </li>
 
                 <li>
-                    <a href="/Sobre_nos/Sobre.html">SOBRE NÓS</a>
+                    <a href="./Sobre_nos/Sobre.html">SOBRE NÓS</a>
                 </li>
 
                 <li>
-                    <a href="/Nossos servicos/nossos_servicos.html">NOSSOS SERVIÇOS</a>
+                    <a href="./Nossos servicos/nossos_servicos.html">NOSSOS SERVIÇOS</a>
                 </li>
                 <li> <a href="javascript:void(0);" id="mostrarFormularioContato_c">
                         <span id="menu-texto">CONTATO</span>
@@ -59,15 +63,15 @@
         <div class="menu">
             <ul>
                 <li>
-                    <a href="../index.html">PÁGINA INICIAL</a>
+                    <a href="#">PÁGINA INICIAL</a>
                 </li>
 
                 <li>
-                    <a href="/Sobre_nos/Sobre.html">SOBRE NÓS</a>
+                    <a href="./Sobre_nos/Sobre.html">SOBRE NÓS</a>
                 </li>
 
                 <li>
-                    <a href="/Nossos servicos/nossos_servicos.html">NOSSOS SERVIÇOS</a>
+                    <a href="./Nossos servicos/nossos_servicos.html">NOSSOS SERVIÇOS</a>
                 </li>
                 <li> <a href="javascript:void(0);" id="mostrarFormularioContato_c">
                         <span id="menu-texto">CONTATO</span>
@@ -90,8 +94,10 @@
 
 
         </div>
+        <h1 id="titulo"> Lavagem Ecológica, Higienização e <br> Estética Automotiva</h1>
 
-        <div id="formulario-contato_c" style="display:none;  border-radius: 10px;">
+        <div id="formulario-contato_c" class="animate__animated animate__backInDown"
+            style="display:none;  border-radius: 10px;">
             <h2 class="contato">CONTATO</h2>
             <form action="mailto:jctinelli@hotmail.com" method="post" enctype="text/plain">
                 <div class="contato-container">
@@ -156,39 +162,112 @@
         </div>
 
 
+
+
+
     </header>
-    <img class="imagem_banner" src="./imagens/Sobre_EcoClean.jpg" alt="Carro paisagem">
-    <main>
 
-        <div class="logo_sobre">
-            <!-- <img src="./" alt="Eco Clean"  class="Sobre_img_cabecalho"> -->
-            <h1 class="texto_sobre_img">O Eco Clean Ecológica</h1>
-            <h2 class="texto_depois"><br><br>conheça mais um pouco de nós.</h2>
-        </div>
-        <div class="Sobre_nos_img">
-            <h1 class="texto_sobre_img_lavando_carro">SOBRE NÓS</h1>
-            <img src="/Imagens/Sobre_nos_lavagem-ecologica.png" alt="Lavando Carro" class="lavando_carro">
-            <p class="texto_sobre_nos">
-                Somos uma empresa ecologicamente correta que desde o ano de 2007 atuamos no segmento de <br>
-                Ecolavagem, Higienização e Estética Automotiva. Nossos técnicos são profissionais altamente <br>
-                qualificados que passam por treinamentos constantes. Os produtos e equipamentos que utilizamos <br>
-                são todos da linha profissional, o que há de melhor no mercado mundial (utilizamos produtos e <br>
-                equipamentos nacionais e importados), para que os serviços executados nos veículos superem as <br>
-                expectativas dos nossos clientes.<br><br>
-                <!-- Se você tem interesse em saber onde fica o ECO CLEAN mais próximo de você,
-                <a href="http://carwashecologico.com.br/#unidades"><strong>clique aqui.</strong></a><br><br> -->
-                SOBRE A NOSSA LAVAGEM ECOLÓGICA<br><br>
-                A nossa Ecolavagem, também conhecida como lavagem à seco, biolavagem ou lavagem ecológica <br>
-                é uma técnica de lavagem de veículos que praticamente elimina o uso de água e limpa os carros por <br>
-                meio de produtos biodegradáveis aplicados com equipamentos e materiais específicos, todos da <br>
-                linha profissional. Enquanto o processo de lavagem não ecológica gasta até 500 litros de água por <br>
-                automóvel, a nossa Ecolavagem utiliza apenas 200 ml que é para fazer a diluição dos produtos.<br><br>
-                Apenas 200 ml de água, assim que um carro vai ser lavado por nós do ECO CLEAN!!!
+
+
+    <img class="imagem_banner" src="img_renan/img_capa_01.png.jpg" alt="Carro paisagem">
+    <!-- <center>
+           
+            <h2>NOSSOS SERVIÇOS</h2>
+        </center> -->
+
+    <ul>
+        <li>
+            <div class="img"><img src="img_renan/lavagem_ecologica_01.jpg" width="300" height="200"></div>
+            <p>Em nossa Lavagem Ecológica, utilizamos <br> produtos biodegradáveis, acrescidos de 200ml<br> de água.
+                Os nossos técnicos de lavagem e<br> higienização são profissionais altamente <br>qualificados e
+                treinados para seguirem os<br>
+                nossos...<a href="#"> saiba mais </p></a>
+        </li>
+        <li>
+            <div class="img"><img src="img_renan/enceramento_02.jpg" width="300" height="200"></div>
+            <p>O nosso serviço de enceramento é altamente <br>recomendado todos os veículos, pois as ceras <br>que
+                utilizamos
+                formam uma película sobre o<br> verniz da pintura do carro, vedando os<br> micrósporos da pintura,
+                refletindo desta<br> forma...<a href="#"> saiba mais </p></a>
+        </li>
+
+        <li>
+            <div class="img"><img src="img_renan/dedetizacao_cabine_03.jpg" width="300" height="200"></div>
+            <p>A hidratação com a higienização de bancos<br> ou outros artigos em couro, limpa, higieniza<br> e recupera
+                sua umidade natural. O processo<br> de hidratação de couro promove a limpeza e<br> o equilíbrio do PH.
+                Como o couro é uma... <br> <a href="#"> saiba mais</p> </a>
+        </li>
+
+
+    </ul>
+
+    <center><button> Veja todos </button></center>
+    <a href="/Nossos servicos/nossos_servicos.html" alt="button"> </a>
+
+    </div>
+
+    <section>
+
+        <li>
+            <div class="img1"><img src="img_renan/iconeEco_01.png" width="300"></div>
+            <strong> LAVAGEM ECOLOGICA </strong>
+            <p>Não há desperdícios de água. <br> Economiza-se até 99% de água <br> comparado ao método de lavagem com
+                <br> utilização predominante de água.
             </p>
-        </div>
+        </li>
 
-    </main>
+        <li>
+            <div class="img2"><img src="img_renan/iconeEco_02.png" width="300"></div>
+            <strong> LIMPEZAS MAIS DURADOURAS </strong>
+            <p>Os produtos que utilizamos deixam uma fina<br> película protetora e impermeabilizante que protege <br>a
+                pintura do veículo contra a chuva, a poluição, <br>a maresia e os raios UV.</p>
+        </li>
 
+        <li>
+            <div class="img3"><img src="img_renan/iconeEco_03.png" width="300"></div>
+            <strong>CONSERVA A PINTURA DO AUTOMÓVEL</strong>
+            <p>Evitando o aparecimento de riscos pois no nosso <br> não utilizamos força, para retirada da sujeira, <br>
+                ao contrário das lavagens tradicionais.</p>
+        </li>
+
+
+    </section>
+
+
+    </div>
+
+    </div>
+    <div class="formulario-modal" style="display: none;">
+        <div id="formulario-colaborador">
+            <h2>Trabalhe Conosco</h2>
+            <form action='mailto:' + email + method="post" enctype="text/plain">
+                <div class="linha">
+                    <div class="coluna">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="coluna">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="coluna">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </div>
+                </div>
+                <label for="arquivo">Selecionar Arquivo:</label>
+                <input type="file" id="arquivo" name="arquivo" accept=".pdf, .doc, .docx" required><br><br>
+                <input type="submit" value="Enviar">
+                <button class="btn-cancelar"> Cancelar </button>
+
+                <div id="mensagem-enviado" style="display: none;">
+                    <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
+                </div>
+            </form>
+        </div> <!-- Resto do conteúdo da página -->
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="sobre-nos">
@@ -250,40 +329,9 @@
 
 
     </footer>
-    <div class="formulario-modal" style="display: none;">
-        <div id="formulario-colaborador">
-            <h2>Trabalhe Conosco</h2>
-            <form action='mailto:' + email + method="post" enctype="text/plain">
-                <div class="linha">
-                    <div class="coluna">
-                        <label for="nome">Nome completo:</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
-                </div>
-                <div class="linha">
-                    <div class="coluna">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="coluna">
-                        <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" required>
-                    </div>
-                </div>
-                <label for="arquivo">Selecionar Arquivo:</label>
-                <input type="file" id="arquivo" name="arquivo" accept=".pdf, .doc, .docx" required><br><br>
-                <input type="submit" value="Enviar">
-                <button class="btn-cancelar"> Cancelar </button>
 
-                <div id="mensagem-enviado" style="display: none;">
-                    <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
-                </div>
-            </form>
-        </div> <!-- Resto do conteúdo da página -->
-    </div>
-    <script type="text/javascript" src="./Contato/javascript/meu_javascript.js" defer> </script>
-    <script type="text/javascript" src="./javascript/x_meu_javascript.js"> </script>
-    <script type="text/javascript" src="../Nossos servicos/java_script/meu_javascript.js"> </script>
+
+
 </body>
 
 </html>
